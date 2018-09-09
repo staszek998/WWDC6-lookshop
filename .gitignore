@@ -8,7 +8,6 @@
 
 # production
 /build
-/wwdc
 
 # misc
 .DS_Store
@@ -20,3 +19,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# design docs
+/wwdc
