@@ -9,3 +9,5 @@ const database = {
   shoes,
   accessories
 };
+
+export { database };
