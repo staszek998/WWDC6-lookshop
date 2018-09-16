@@ -1,7 +1,9 @@
-import tightsAndStockings from './tights-and-stockings';
+import { tightsAndStockings } from "./tights-and-stockings";
+import { bras } from "./bras";
 
 const underwear = {
-    tightsAndStockings
-}
+  tightsAndStockings,
+  bras
+};
 
 export { underwear };
