@@ -5,17 +5,13 @@ class Main extends Component {
   render() {
     return (
       <Router>
-        <main>
-          <div className="grid-container">
-            <div className="grid-x">
-              <div className="cell small-6">cell</div>
-              <div className="cell small-6">cell</div>
-            </div>
-            <div className="grid-x">
-              <div className="cell small-12">cell</div>
-            </div>
+        <div className="container">
+          <div className="row">
+            <div className="col">col</div>
+            <div className="col">col</div>
+            <div className="col">col</div>
           </div>
-        </main>
+        </div>
       </Router>
     );
   }
