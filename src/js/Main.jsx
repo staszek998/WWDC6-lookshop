@@ -6,36 +6,12 @@ import About from "./tmp-router-paths/About";
 import Contact from "./tmp-router-paths/Contact";
 
 class Main extends Component {
-
-    goBack = () => {
-        
-    }
+  goBack = () => {};
 
   render() {
     return (
       <Router>
-        <main>
-          <h1>Router paths:</h1>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-
-          <hr />
-
-          <h2>Content rendered by the router:</h2>
-
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-        </main>
+        <main>Hello World!</main>
       </Router>
     );
   }
