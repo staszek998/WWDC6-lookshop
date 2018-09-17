@@ -162,6 +162,11 @@ class Main extends Component {
               </div>
             </div>
           </div>
+
+          {/* ACCEPTED PAYMENTS */}
+          <div className="row border d-none d-md-flex justify-content-center">
+            <div className="col-auto border">accepted payments</div>
+          </div>
         </main>
       </Router>
     );
