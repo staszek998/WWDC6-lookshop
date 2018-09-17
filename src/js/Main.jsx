@@ -11,6 +11,7 @@ class Main extends Component {
     return (
       <Router>
         <div className="container">
+          {/* HEADER */}
           <div className="row justify-content-between">
             <div className="col-12 col-md-6">CUSTOMER CARE</div>
             <div className="col-12 col-md-6">
@@ -19,6 +20,17 @@ class Main extends Component {
                 <div className="col-6 col-md-auto">MY ACCOUNT</div>
                 <div className="col-3 col-md-auto">Search</div>
               </div>
+            </div>
+          </div>
+
+          {/* LOGO, MENU & CART */}
+          <div className="row">
+            <div className="col-12 col-md-8 col-lg-3 order-1">logo</div>
+            <div className="col-12 col-md-4 col-lg-3 order-2 order-lg-3">
+              cart (3rd on lg)
+            </div>
+            <div className="col-12 col-lg-6 order-3 order-lg-2">
+              menu (2nd on lg)
             </div>
           </div>
         </div>
