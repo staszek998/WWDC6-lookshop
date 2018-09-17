@@ -40,7 +40,7 @@ class Main extends Component {
 
           {/* SLIDER */}
           <div className="row border">
-            <div className="col-12 d-none d-md-flex border">slider</div>
+            <div className="col-12 d-none d-md-block border">slider</div>
           </div>
 
           {/* NEWSLETTER & SOCIAL MEDIA */}
@@ -54,6 +54,22 @@ class Main extends Component {
                   <div className="col-12 col-md-6 border">
                     social media icons
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* CURRENT OFFER COLLAGE */}
+          <div className="container border">
+            <div className="row border">
+              <div className="col d-none d-md-block border">offer</div>
+              <div className="col d-none d-md-block border">
+                <div className="row border">
+                  <div className="col border">offer</div>
+                </div>
+                <div className="row border">
+                  <div className="col border">offer</div>
+                  <div className="col border">offer</div>
                 </div>
               </div>
             </div>
