@@ -39,8 +39,24 @@ class Main extends Component {
           </div>
 
           {/* SLIDER */}
-          <div className="jumbotron-fluid border">
+          <div className="row border">
             <div className="col-12 d-none d-md-flex border">slider</div>
+          </div>
+
+          {/* NEWSLETTER & SOCIAL MEDIA */}
+          <div className="row border">
+            <div className="col">
+              <div className="container border">
+                <div className="row border">
+                  <div className="col-12 col-md-6 border">
+                    newsletter subscription
+                  </div>
+                  <div className="col-12 col-md-6 border">
+                    social media icons
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </main>
       </Router>
