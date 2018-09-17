@@ -10,16 +10,13 @@ class Main extends Component {
   render() {
     return (
       <Router>
-        <main>
-          <div className="grid-container">
-            <div className="grid-x align-justify">
-              <CustomerCare />
-              <CurrencySelector />
-              <MyAccount />
-              <Search />
-            </div>
+        <div className="container">
+          <div className="row">
+            <div className="col">col</div>
+            <div className="col">col</div>
+            <div className="col">col</div>
           </div>
-        </main>
+        </div>
       </Router>
     );
   }
