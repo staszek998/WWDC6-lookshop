@@ -40,7 +40,7 @@ class Main extends Component {
 
           {/* SLIDER */}
           <div className="row border">
-            <div className="col-12 d-none d-md-block border">slider</div>
+            <div className="col-12 d-none d-md-block border">main slider</div>
           </div>
 
           {/* NEWSLETTER & SOCIAL MEDIA */}
@@ -76,14 +76,43 @@ class Main extends Component {
           </div>
 
           {/* SELECT / TABS */}
-          <div className="container">
-            <div className="row border d-md-none">
-              <div className="col border">SELECT on mobile</div>
+          <div className="row d-md-none">
+            <div className="container border">
+              <div className="row border">
+                <div className="col border">SELECT on mobile</div>
+              </div>
             </div>
+          </div>
 
-            <div className="row border d-none d-md-flex justify-content-between">
-              <div className="col border">TABS on medium and above</div>
-              <div className="col border">arrows &lt; &gt;</div>
+          <div className="row border d-none d-md-flex justify-content-between">
+            <div className="col border">TABS on medium and above</div>
+            <div className="col border">arrows &lt; &gt;</div>
+          </div>
+
+          <div className="row border">
+            <div className="col border">offers slider</div>
+          </div>
+
+          {/* CLEARANCE */}
+          <div className="container border">
+            <div className="row border">
+              <div className="col border d-flex justify-content-center">
+                clearance 50% off
+              </div>
+            </div>
+            <div className="row border">
+              <div className="col-6 col-md-4 col-lg-3 border">
+                col-6, col-md-4, col-lg-3
+              </div>
+              <div className="col-6 col-md-4 col-lg-3 border">
+                col-6, col-md-4, col-lg-3
+              </div>
+              <div className="d-none d-md-block col-4 col-lg-3 border">
+                d-none, d-md-block, col-md-4, col-lg-3
+              </div>
+              <div className="d-none d-lg-block col-3 border">
+                d-none, d-lg-block, col-lg-3
+              </div>
             </div>
           </div>
         </main>
