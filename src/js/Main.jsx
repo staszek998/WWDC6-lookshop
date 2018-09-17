@@ -74,6 +74,18 @@ class Main extends Component {
               </div>
             </div>
           </div>
+
+          {/* SELECT / TABS */}
+          <div className="container">
+            <div className="row border d-md-none">
+              <div className="col border">SELECT on mobile</div>
+            </div>
+
+            <div className="row border d-none d-md-flex justify-content-between">
+              <div className="col border">TABS on medium and above</div>
+              <div className="col border">arrows &lt; &gt;</div>
+            </div>
+          </div>
         </main>
       </Router>
     );
