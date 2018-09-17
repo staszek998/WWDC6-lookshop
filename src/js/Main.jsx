@@ -6,15 +6,7 @@ class Main extends Component {
     return (
       <Router>
         <main>
-          <div className="grid-container">
-            <div className="grid-x">
-              <div className="cell small-6">cell</div>
-              <div className="cell small-6">cell</div>
-            </div>
-            <div className="grid-x">
-              <div className="cell small-12">cell</div>
-            </div>
-          </div>
+          <div className="grid-container">grid container</div>
         </main>
       </Router>
     );
