@@ -193,6 +193,20 @@ class Main extends Component {
               </div>
             </div>
           </div>
+
+          {/* FOOTER BOTTOM (TABLET & DESKTOP) */}
+          <footer className="row border d-none d-md-flex">
+            <div className="col border">
+              <div className="container border">
+                <div className="row border">
+                  <div className="col-6 border">links</div>
+                  <div className="col-6 border text-right">
+                    &copy; copyright
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
         </main>
       </Router>
     );
