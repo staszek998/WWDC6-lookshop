@@ -253,6 +253,14 @@ class Main extends Component {
                     data-target="#footer-links"
                     aria-expanded="false"
                     aria-controls="footer-links"
+                    onClick={() => {
+                      setTimeout(() => {
+                        window.scroll({
+                          top: 500,
+                          behavior: "smooth"
+                        });
+                      }, 1000);
+                    }}
                   >
                     button
                   </button>
