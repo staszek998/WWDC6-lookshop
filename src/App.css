@@ -1,0 +1,18 @@
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
+.container .row {
+  margin-left: -15px;
+  margin-right: -15px; }
+
+.header {
+  color: white;
+  background-color: black; }
+  .header .header__left-column {
+    background-color: white;
+    color: black; }
+    @media (min-width: 768px) {
+      .header .header__left-column {
+        background-color: black;
+        color: white; } }

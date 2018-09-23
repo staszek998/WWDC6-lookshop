@@ -19,7 +19,7 @@ class Main extends Component {
   render() {
     return (
       <Router>
-        <main className="w-100 d-flex flex-column px-2 border">
+        <main className="d-flex flex-column">
           <Header />
           <LogoMenuAndCart />
           <HeroSlider />
