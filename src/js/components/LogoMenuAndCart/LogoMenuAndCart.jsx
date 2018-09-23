@@ -4,7 +4,7 @@ import lookshopLogo from "../../../images/lookshop-logo.png";
 class LogoMenuAndCart extends Component {
   render() {
     return (
-      <div className="row border">
+      <div className="row border logo-menu-and-cart">
         <div className="container">
           <div className="row border">
             <div className="col-12 col-md-8 col-lg-3 order-1 d-flex justify-content-center justify-content-md-start align-items-center border">
@@ -15,13 +15,13 @@ class LogoMenuAndCart extends Component {
             </div>
             <div className="col-12 col-lg-6 order-3 order-lg-2 border">
               {/* MOBILE VERSION */}
-              <div className="row d-lg-none">
+              <div className="row d-lg-none mobile-menu">
                 <div className="col-6 d-flex align-items-center">
-                  <span>MENU</span>
+                  <span className="text-white">MENU</span>
                 </div>
                 <div className="col-6 d-flex justify-content-end">
                   <button
-                    className="btn bg-transparent"
+                    className="btn bg-transparent text-white"
                     data-toggle="collapse"
                     type="button"
                     data-target="#mobile-menu"
@@ -68,7 +68,63 @@ class LogoMenuAndCart extends Component {
               </div>
 
               {/* DESKTOP VERSION */}
-              <div className="row d-none d-lg-flex">desktop menu</div>
+              <div className="row d-none d-lg-flex justify-content-end flex-nowrap desktop-menu">
+                <div className="col-auto">
+                  <select
+                    name="new"
+                    id="new"
+                    className="custom-select border-0 bg-transparent"
+                  >
+                    <option value="1">new</option>
+                    <option value="2">option 1</option>
+                    <option value="3">option 2</option>
+                  </select>
+                </div>
+                <div className="col-auto">
+                  <select
+                    name="designers"
+                    id="designers"
+                    className="custom-select border-0 bg-transparent"
+                  >
+                    <option value="1">designers</option>
+                    <option value="2">option 1</option>
+                    <option value="3">option 2</option>
+                  </select>
+                </div>
+                <div className="col-auto">
+                  <select
+                    name="women"
+                    id="women"
+                    className="custom-select border-0 bg-transparent"
+                  >
+                    <option value="1">women</option>
+                    <option value="2">option 1</option>
+                    <option value="3">option 2</option>
+                  </select>
+                </div>
+                <div className="col-auto">
+                  <select
+                    name="men"
+                    id="men"
+                    className="custom-select border-0 bg-transparent"
+                  >
+                    <option value="1">men</option>
+                    <option value="2">option 1</option>
+                    <option value="3">option 2</option>
+                  </select>
+                </div>
+                <div className="col-auto">
+                  <select
+                    name="clearance"
+                    id="clearance"
+                    className="custom-select border-0 bg-transparent"
+                  >
+                    <option value="1">clearance</option>
+                    <option value="2">option 1</option>
+                    <option value="3">option 2</option>
+                  </select>
+                </div>
+              </div>
             </div>
           </div>
         </div>

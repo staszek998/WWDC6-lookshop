@@ -18,3 +18,18 @@
         color: white; } }
   .header .custom-select option {
     background-color: black; }
+
+.logo-menu-and-cart .mobile-menu {
+  background-color: #fd926d; }
+
+.logo-menu-and-cart #mobile-menu a {
+  background-color: transparent;
+  color: white; }
+
+.logo-menu-and-cart .desktop-menu .col-auto {
+  padding-right: 0;
+  padding-left: 0; }
+
+.logo-menu-and-cart .desktop-menu option {
+  background-color: #fd926d;
+  color: white; }
