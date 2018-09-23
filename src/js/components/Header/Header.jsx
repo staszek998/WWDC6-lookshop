@@ -9,9 +9,9 @@ class Header extends Component {
             <div className="col-12 col-md-6">CUSTOMER CARE: +22 654 25 98</div>
             <div className="col-12 col-md-6">
               <div className="row justify-content-between justify-content-md-end">
-                <div className="col-3 col-md-auto">CURRENCY $</div>
-                <div className="col-6 col-md-auto">MY ACCOUNT</div>
-                <div className="col-3 col-md-auto">Search</div>
+                <div className="col-3 col-md-auto border-left border-right">CURRENCY $</div>
+                <div className="col-6 col-md-auto border-right">MY ACCOUNT</div>
+                <div className="col-3 col-md-auto border-right">Search</div>
               </div>
             </div>
           </div>
