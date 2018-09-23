@@ -14,7 +14,33 @@ class LogoMenuAndCart extends Component {
               cart (3rd on lg)
             </div>
             <div className="col-12 col-lg-6 order-3 order-lg-2 border">
-              menu (2nd on lg)
+              {/* MOBILE VERSION */}
+              <div className="row d-md-none">
+                <div className="col-6 d-flex align-items-center">
+                  <span>MENU</span>
+                </div>
+                <div className="col-6 d-flex justify-content-end">
+                  <button
+                    className="btn bg-transparent"
+                    data-toggle="collapse"
+                    type="button"
+                    data-target="#mobile-menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                  >
+                    <i className="fas fa-bars" />
+                  </button>
+                </div>
+                <div className="col-12 border collapse" id="mobile-menu">
+                  <ul>
+                    <li>list item</li>
+                    <li>list item</li>
+                    <li>list item</li>
+                    <li>list item</li>
+                    <li>list item</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
