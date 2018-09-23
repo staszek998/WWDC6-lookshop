@@ -31,14 +31,39 @@ class LogoMenuAndCart extends Component {
                     <i className="fas fa-bars" />
                   </button>
                 </div>
-                <div className="col-12 border collapse" id="mobile-menu">
-                  <ul>
-                    <li>list item</li>
-                    <li>list item</li>
-                    <li>list item</li>
-                    <li>list item</li>
-                    <li>list item</li>
-                  </ul>
+                <div className="col-12 border collapse p-0" id="mobile-menu">
+                  <div className="list-group">
+                    <a
+                      href="#"
+                      className="list-group-item list-group-item-action"
+                    >
+                      new
+                    </a>
+                    <a
+                      href="#"
+                      className="list-group-item list-group-item-action"
+                    >
+                      designers
+                    </a>
+                    <a
+                      href="#"
+                      className="list-group-item list-group-item-action"
+                    >
+                      women
+                    </a>
+                    <a
+                      href="#"
+                      className="list-group-item list-group-item-action"
+                    >
+                      men
+                    </a>
+                    <a
+                      href="#"
+                      className="list-group-item list-group-item-action"
+                    >
+                      clearance
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
