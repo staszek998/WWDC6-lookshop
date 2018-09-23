@@ -6,7 +6,7 @@ class Header extends Component {
       <div className="row header">
         <div className="container">
           <div className="row justify-content-between">
-            <div className="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-start header__left-column">
+            <div className="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-start py-2 py-md-1 header__left-column">
               <span>CUSTOMER CARE: +22 654 25 98</span>
             </div>
             <div className="col-12 col-md-6 header__right-column">
@@ -22,12 +22,16 @@ class Header extends Component {
                     <option value="pln">PLN</option>
                   </select>
                 </div>
-                <div className="col-6 col-md-auto d-flex justify-content-around align-items-center border-right">
-                  <i className="fas fa-user mr-md-1" />
-                  <span>MY ACCOUNT</span>
+                <div className="col-6 col-md-auto d-flex justify-content-center align-items-center border-right">
+                  <button className="btn bg-transparent text-white">
+                    <i className="fas fa-user mr-1" />
+                    <span>MY ACCOUNT</span>
+                  </button>
                 </div>
                 <div className="col-3 col-md-auto d-flex justify-content-center align-items-center border-right">
-                  Search
+                  <button className="btn text-white bg-transparent">
+                    <i className="fas fa-search" />
+                  </button>
                 </div>
               </div>
             </div>
