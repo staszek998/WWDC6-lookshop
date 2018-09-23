@@ -1,5 +1,18 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Header from "./components/Header/Header";
+import LogoMenuAndCart from "./components/LogoMenuAndCart/LogoMenuAndCart";
+import HeroSlider from "./components/HeroSlider/HeroSlider";
+import NewsletterAndSocialMedia from "./components/NewsletterAndSocialMedia/NewsletterAndSocialMedia";
+import OffersCollage from "./components/OffersCollage/OffersCollage";
+import SelectOrTabs from "./components/SelectOrTabs/SelectOrTabs";
+import Clearance50Off from "./components/Clearance50Off/Clearance50Off";
+import FavouriteBrands from "./components/FavouriteBrands/FavouriteBrands";
+import AboutLookshop from "./components/AboutLookshop/AboutLookshop";
+import AcceptedPayments from "./components/AcceptedPayments/AcceptedPayments";
+import FooterTop from "./components/FooterTop/FooterTop";
+import FooterBottom from "./components/FooterBottom/FooterBottom";
+import FooterMenuMobile from "./components/FooterMenuMobile/FooterMenuMobile";
 
 // import CustomerCare from "./components/Header/CustomerCare/CustomerCare";
 // import CurrencySelector from "./components/Header/CurrencySelector/CurrencySelector";
@@ -13,272 +26,21 @@ class Main extends Component {
         <main className="w-100 d-flex flex-column px-2 border">
           <div className="row border">
             <div className="container">
-              {/* HEADER */}
-              <div className="row justify-content-between border">
-                <div className="col-12 col-md-6 border">CUSTOMER CARE</div>
-                <div className="col-12 col-md-6 border">
-                  <div className="row justify-content-between justify-content-md-end border">
-                    <div className="col-3 col-md-auto border">CURRENCY $</div>
-                    <div className="col-6 col-md-auto border">MY ACCOUNT</div>
-                    <div className="col-3 col-md-auto border">Search</div>
-                  </div>
-                </div>
-              </div>
-
-              {/* LOGO, MENU & CART */}
-              <div className="row border">
-                <div className="col-12 col-md-8 col-lg-3 order-1 border">
-                  logo
-                </div>
-                <div className="col-12 col-md-4 col-lg-3 order-2 order-lg-3 border">
-                  cart (3rd on lg)
-                </div>
-                <div className="col-12 col-lg-6 order-3 order-lg-2 border">
-                  menu (2nd on lg)
-                </div>
-              </div>
+              <Header />
+              <LogoMenuAndCart />
             </div>
           </div>
-
-          {/* SLIDER */}
-          <div className="row d-none d-md-flex border">
-            <div className="col-12 border">main slider</div>
-          </div>
-
-          {/* NEWSLETTER & SOCIAL MEDIA */}
-          <div className="row border">
-            <div className="container border">
-              <div className="row border">
-                <div className="col-12 col-md-6 border">
-                  newsletter subscription
-                </div>
-                <div className="col-12 col-md-6 border">social media icons</div>
-              </div>
-            </div>
-          </div>
-
-          {/* CURRENT OFFER COLLAGE */}
-          <div className="container border d-none d-md-block ">
-            <div className="row border">
-              <div className="col border">offer</div>
-              <div className="col border">
-                <div className="row border">
-                  <div className="col border">offer</div>
-                </div>
-                <div className="row border">
-                  <div className="col border">offer</div>
-                  <div className="col border">offer</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* SELECT / TABS */}
-          <div className="row d-md-none">
-            <div className="container border">
-              <div className="row border">
-                <div className="col border">SELECT on mobile</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="row border d-none d-md-flex justify-content-between">
-            <div className="col border">TABS on medium and above</div>
-            <div className="col border">arrows &lt; &gt;</div>
-          </div>
-
-          <div className="row border">
-            <div className="col border">offers slider</div>
-          </div>
-
-          {/* CLEARANCE */}
-          <div className="row border">
-            <div className="container border">
-              <div className="row border">
-                <div className="col border d-flex justify-content-center">
-                  clearance 50% off
-                  <ul>
-                    <li>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Hic deserunt sunt similique cum ea voluptates pariatur
-                      tempore, voluptatibus ex autem alias omnis delectus
-                      molestias quam voluptate numquam consequatur explicabo
-                      aut!
-                    </li>
-                    <li>
-                      Exercitationem, sapiente, id consequuntur nisi nemo,
-                      laboriosam unde asperiores modi corporis aperiam fugit
-                      molestiae necessitatibus laudantium. Facere asperiores
-                      esse expedita modi vel deserunt, aliquam molestias dolorem
-                      assumenda corrupti aut veritatis.
-                    </li>
-                    <li>
-                      Provident esse laudantium eum rem qui nulla, cumque quis
-                      ut atque quas distinctio unde repellat totam consequuntur
-                      pariatur odit. Esse animi voluptatum minima quaerat, magni
-                      suscipit doloremque deleniti aliquam molestias.
-                    </li>
-                    <li>
-                      Illum incidunt vel commodi veniam, iusto unde! Asperiores,
-                      omnis sed. Quaerat consequatur dicta aliquam! Rem, animi
-                      reprehenderit libero, tempora nemo obcaecati quod, illo
-                      magni quo optio nobis possimus velit culpa.
-                    </li>
-                    <li>
-                      Nobis cum rem reprehenderit mollitia veniam cumque modi ex
-                      labore voluptatem accusantium iste voluptates dolorum
-                      quisquam eaque dolorem unde ad eius, vel sit veritatis,
-                      obcaecati eos iusto optio. Officia, molestiae.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="row border">
-                <div className="col-6 col-md-4 col-lg-3 border">
-                  col-6, col-md-4, col-lg-3
-                </div>
-                <div className="col-6 col-md-4 col-lg-3 border">
-                  col-6, col-md-4, col-lg-3
-                </div>
-                <div className="d-none d-md-block col-4 col-lg-3 border">
-                  d-none, d-md-block, col-md-4, col-lg-3
-                </div>
-                <div className="d-none d-lg-block col-3 border">
-                  d-none, d-lg-block, col-lg-3
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* FAVOURITE BRANDS */}
-          <div className="row border d-none d-md-block">
-            <div className="col text-center border">
-              favourite brands (top) separator
-            </div>
-          </div>
-          <div className="container">
-            <div className="row border d-none d-md-flex">
-              <div className="col border d-none d-lg-block">brand</div>
-              <div className="col border d-none d-lg-block">brand</div>
-              <div className="col border">brand</div>
-              <div className="col border">brand</div>
-              <div className="col border">brand</div>
-              <div className="col border">brand</div>
-              <div className="col border">brand</div>
-              <div className="col border">brand</div>
-            </div>
-          </div>
-          <div className="row border d-none d-md-block">
-            <div className="col text-center border">
-              favourite brands (bottom) separator
-            </div>
-          </div>
-
-          {/* ABOUT LOOKSHOP */}
-          <div className="container border d-none d-md-block">
-            <div className="row border">
-              <div className="col border text-center">about lookshop</div>
-            </div>
-            <div className="row border">
-              <div className="col border text-center">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Mollitia ipsum, porro distinctio quas pariatur quibusdam quos
-                quis eveniet, deleniti voluptates quae necessitatibus tempora?
-                Repudiandae provident, voluptas ducimus quia molestiae beatae.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
-                labore error reiciendis? Fugit possimus perspiciatis optio!
-                Corrupti, velit odit delectus molestiae nesciunt pariatur
-                mollitia. Nisi aliquid ullam perferendis modi necessitatibus?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                nihil saepe ratione facere, hic esse nulla eligendi illum fugit
-                aspernatur voluptates incidunt adipisci, ullam nesciunt at
-                cupiditate, cum quisquam a.
-              </div>
-            </div>
-          </div>
-
-          {/* ACCEPTED PAYMENTS */}
-          <div className="row border d-none d-md-flex justify-content-center">
-            <div className="col-auto border">accepted payments</div>
-          </div>
-
-          {/* FOOTER TOP (TABLET & DESKTOP) */}
-          <div className="row border d-none d-md-flex">
-            <div className="col border">
-              <div className="container border">
-                <div className="row border">
-                  <div className="col-6 col-lg-8 border">
-                    <div className="row border">
-                      <div className="col-6 col-lg-3 border">
-                        customer service
-                      </div>
-                      <div className="col-6 col-lg-3 border">information</div>
-                      <div className="col-6 col-lg-3 border">campaigns</div>
-                      <div className="col-6 col-lg-3 border">stores</div>
-                    </div>
-                  </div>
-                  <div className="col-6 col-lg-4 border">
-                    <div className="row border">
-                      <div className="col-6 border">social media links</div>
-                      <div className="col-6 border">100% secured badge</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* FOOTER BOTTOM (TABLET & DESKTOP) */}
-          <footer className="row border d-none d-md-flex">
-            <div className="col border">
-              <div className="container border">
-                <div className="row border">
-                  <div className="col-6 border">links</div>
-                  <div className="col-6 border text-right">
-                    &copy; copyright
-                  </div>
-                </div>
-              </div>
-            </div>
-          </footer>
-
-          {/* MOBILE FOOTER MENU */}
-          <footer className="row border d-md-none">
-            <div className="container border">
-              <div className="row border">
-                <div className="col-6 border">
-                  <button
-                    data-toggle="collapse"
-                    type="button"
-                    data-target="#footer-links"
-                    aria-expanded="false"
-                    aria-controls="footer-links"
-                    onClick={() => {
-                      setTimeout(() => {
-                        window.scroll({
-                          top: 500,
-                          behavior: "smooth"
-                        });
-                      }, 1000);
-                    }}
-                  >
-                    button
-                  </button>
-                </div>
-                <div className="col-6 border">&copy; copyright</div>
-                <div className="col-12 border collapse" id="footer-links">
-                  footer links
-                  <ul>
-                    <li>list item</li>
-                    <li>list item</li>
-                    <li>list item</li>
-                    <li>list item</li>
-                    <li>list item</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </footer>
+          <HeroSlider />
+          <NewsletterAndSocialMedia />
+          <OffersCollage />
+          <SelectOrTabs />
+          <Clearance50Off />
+          <FavouriteBrands />
+          <AboutLookshop />
+          <AcceptedPayments />
+          <FooterTop />
+          <FooterBottom />
+          <FooterMenuMobile />
         </main>
       </Router>
     );
