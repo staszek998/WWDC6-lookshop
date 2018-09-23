@@ -26,10 +26,6 @@
   background-color: transparent;
   color: white; }
 
-.logo-menu-and-cart .desktop-menu .col-auto {
-  padding-right: 0;
-  padding-left: 0; }
-
-.logo-menu-and-cart .desktop-menu option {
-  background-color: #fd926d;
-  color: white; }
+.logo-menu-and-cart .desktop-menu .dropdown-toggle::after {
+  position: absolute;
+  top: 18px; }

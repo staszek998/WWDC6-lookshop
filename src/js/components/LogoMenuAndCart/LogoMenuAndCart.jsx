@@ -70,59 +70,129 @@ class LogoMenuAndCart extends Component {
               {/* DESKTOP VERSION */}
               <div className="row d-none d-lg-flex justify-content-end flex-nowrap desktop-menu">
                 <div className="col-auto">
-                  <select
-                    name="new"
-                    id="new"
-                    className="custom-select border-0 bg-transparent"
-                  >
-                    <option value="1">new</option>
-                    <option value="2">option 1</option>
-                    <option value="3">option 2</option>
-                  </select>
+                  <div class="dropdown">
+                    <button
+                      className="btn bg-transparent dropdown-toggle"
+                      type="button"
+                      id="new"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      new
+                    </button>
+                    <div className="dropdown-menu" aria-labelledby="new">
+                      <a className="dropdown-item" href="#">
+                        Action
+                      </a>
+                      <a className="dropdown-item" href="#">
+                        Another action
+                      </a>
+                      <a className="dropdown-item" href="#">
+                        Something else here
+                      </a>
+                    </div>
+                  </div>
                 </div>
                 <div className="col-auto">
-                  <select
-                    name="designers"
-                    id="designers"
-                    className="custom-select border-0 bg-transparent"
-                  >
-                    <option value="1">designers</option>
-                    <option value="2">option 1</option>
-                    <option value="3">option 2</option>
-                  </select>
+                  <div class="dropdown">
+                    <button
+                      className="btn bg-transparent dropdown-toggle"
+                      type="button"
+                      id="designers"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      designers
+                    </button>
+                    <div className="dropdown-menu" aria-labelledby="designers">
+                      <a className="dropdown-item" href="#">
+                        Action
+                      </a>
+                      <a className="dropdown-item" href="#">
+                        Another action
+                      </a>
+                      <a className="dropdown-item" href="#">
+                        Something else here
+                      </a>
+                    </div>
+                  </div>
                 </div>
                 <div className="col-auto">
-                  <select
-                    name="women"
-                    id="women"
-                    className="custom-select border-0 bg-transparent"
-                  >
-                    <option value="1">women</option>
-                    <option value="2">option 1</option>
-                    <option value="3">option 2</option>
-                  </select>
+                  <div class="dropdown">
+                    <button
+                      className="btn bg-transparent dropdown-toggle"
+                      type="button"
+                      id="women"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      women
+                    </button>
+                    <div className="dropdown-menu" aria-labelledby="women">
+                      <a className="dropdown-item" href="#">
+                        Action
+                      </a>
+                      <a className="dropdown-item" href="#">
+                        Another action
+                      </a>
+                      <a className="dropdown-item" href="#">
+                        Something else here
+                      </a>
+                    </div>
+                  </div>
                 </div>
                 <div className="col-auto">
-                  <select
-                    name="men"
-                    id="men"
-                    className="custom-select border-0 bg-transparent"
-                  >
-                    <option value="1">men</option>
-                    <option value="2">option 1</option>
-                    <option value="3">option 2</option>
-                  </select>
+                  <div class="dropdown">
+                    <button
+                      className="btn bg-transparent dropdown-toggle"
+                      type="button"
+                      id="men"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      men
+                    </button>
+                    <div className="dropdown-menu" aria-labelledby="men">
+                      <a className="dropdown-item" href="#">
+                        Action
+                      </a>
+                      <a className="dropdown-item" href="#">
+                        Another action
+                      </a>
+                      <a className="dropdown-item" href="#">
+                        Something else here
+                      </a>
+                    </div>
+                  </div>
                 </div>
                 <div className="col-auto">
-                  <select
-                    name="clearance"
-                    id="clearance"
-                    className="custom-select border-0 bg-transparent"
-                  >
-                    <option value="1">clearance</option>
-                    <option value="2">option 1</option>
-                    <option value="3">option 2</option>
-                  </select>
+                  <div class="dropdown">
+                    <button
+                      className="btn bg-transparent dropdown-toggle"
+                      type="button"
+                      id="clearance"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      clearance
+                    </button>
+                    <div className="dropdown-menu" aria-labelledby="clearance">
+                      <a className="dropdown-item" href="#">
+                        Action
+                      </a>
+                      <a className="dropdown-item" href="#">
+                        Another action
+                      </a>
+                      <a className="dropdown-item" href="#">
+                        Something else here
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

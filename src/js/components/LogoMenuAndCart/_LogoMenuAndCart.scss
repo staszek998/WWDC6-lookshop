@@ -11,14 +11,9 @@
   }
 
   .desktop-menu {
-    .col-auto {
-      padding-right: 0;
-      padding-left: 0;
-    }
-
-    option {
-      background-color: $tangerine;
-      color: white;
+    .dropdown-toggle::after {
+      position: absolute;
+      top: 18px;
     }
   }
 }
