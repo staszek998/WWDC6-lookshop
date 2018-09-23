@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 import Header from "./components/Header/Header";
 import LogoMenuAndCart from "./components/LogoMenuAndCart/LogoMenuAndCart";
 import HeroSlider from "./components/HeroSlider/HeroSlider";
@@ -13,11 +14,6 @@ import AcceptedPayments from "./components/AcceptedPayments/AcceptedPayments";
 import FooterTop from "./components/FooterTop/FooterTop";
 import FooterBottom from "./components/FooterBottom/FooterBottom";
 import FooterMenuMobile from "./components/FooterMenuMobile/FooterMenuMobile";
-
-// import CustomerCare from "./components/Header/CustomerCare/CustomerCare";
-// import CurrencySelector from "./components/Header/CurrencySelector/CurrencySelector";
-// import MyAccount from "./components/Header/MyAccount/MyAccount";
-// import Search from "./components/Header/Search/Search";
 
 class Main extends Component {
   render() {
