@@ -24,12 +24,8 @@ class Main extends Component {
     return (
       <Router>
         <main className="w-100 d-flex flex-column px-2 border">
-          <div className="row border">
-            <div className="container">
-              <Header />
-              <LogoMenuAndCart />
-            </div>
-          </div>
+          <Header />
+          <LogoMenuAndCart />
           <HeroSlider />
           <NewsletterAndSocialMedia />
           <OffersCollage />
