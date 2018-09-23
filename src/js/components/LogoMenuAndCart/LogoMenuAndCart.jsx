@@ -15,7 +15,7 @@ class LogoMenuAndCart extends Component {
             </div>
             <div className="col-12 col-lg-6 order-3 order-lg-2 border">
               {/* MOBILE VERSION */}
-              <div className="row d-md-none">
+              <div className="row d-lg-none">
                 <div className="col-6 d-flex align-items-center">
                   <span>MENU</span>
                 </div>
@@ -66,6 +66,9 @@ class LogoMenuAndCart extends Component {
                   </div>
                 </div>
               </div>
+
+              {/* DESKTOP VERSION */}
+              <div className="row d-none d-lg-flex">desktop menu</div>
             </div>
           </div>
         </div>
