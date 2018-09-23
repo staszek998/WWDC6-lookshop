@@ -6,7 +6,7 @@ class Header extends Component {
       <div className="row header">
         <div className="container">
           <div className="row justify-content-between">
-            <div className="col-12 col-md-6">CUSTOMER CARE</div>
+            <div className="col-12 col-md-6">CUSTOMER CARE: +22 654 25 98</div>
             <div className="col-12 col-md-6">
               <div className="row justify-content-between justify-content-md-end">
                 <div className="col-3 col-md-auto">CURRENCY $</div>
