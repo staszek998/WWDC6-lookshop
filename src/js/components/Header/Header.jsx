@@ -11,11 +11,11 @@ class Header extends Component {
             </div>
             <div className="col-12 col-md-6 header__right-column">
               <div className="row justify-content-between justify-content-md-end h-100">
-                <div className="col-3 col-md-auto border-left border-right">
+                <div className="col-3 col-md-auto border-left border-right p-0">
                   <select
                     name="currency"
                     id="currency"
-                    className="custom-select bg-transparent border-0 text-white"
+                    className="custom-select bg-transparent border-0 text-white w-100"
                   >
                     <option value="usd">$ USD</option>
                     <option value="eur">€ EUR</option>
