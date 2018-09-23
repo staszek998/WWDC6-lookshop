@@ -22,8 +22,9 @@ class Header extends Component {
                     <option value="pln">PLN</option>
                   </select>
                 </div>
-                <div className="col-6 col-md-auto d-flex justify-content-center align-items-center border-right">
-                  MY ACCOUNT
+                <div className="col-6 col-md-auto d-flex justify-content-around align-items-center border-right">
+                  <i className="fas fa-user mr-1" />
+                  <span>MY ACCOUNT</span>
                 </div>
                 <div className="col-3 col-md-auto d-flex justify-content-center align-items-center border-right">
                   Search
