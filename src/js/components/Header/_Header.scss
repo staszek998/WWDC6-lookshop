@@ -1,4 +1,14 @@
 .header {
-  background-color: black;
   color: white;
+  background-color: black;
+
+  .header__left-column {
+    background-color: white;
+    color: black;
+
+    @media (min-width: 768px) {
+      background-color: black;
+      color: white;
+    }
+  }
 }
