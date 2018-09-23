@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import lookshopLogo from "../../../images/lookshop-logo.png";
 
 class LogoMenuAndCart extends Component {
   render() {
@@ -6,7 +7,9 @@ class LogoMenuAndCart extends Component {
       <div className="row border">
         <div className="container">
           <div className="row border">
-            <div className="col-12 col-md-8 col-lg-3 order-1 border">logo</div>
+            <div className="col-12 col-md-8 col-lg-3 order-1 border">
+              <img src={lookshopLogo} alt="Logo of the lookshop" />
+            </div>
             <div className="col-12 col-md-4 col-lg-3 order-2 order-lg-3 border">
               cart (3rd on lg)
             </div>
