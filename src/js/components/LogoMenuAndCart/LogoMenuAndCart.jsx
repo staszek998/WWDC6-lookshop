@@ -9,6 +9,7 @@ class LogoMenuAndCart extends Component {
       <div className="row border logo-menu-and-cart">
         <div className="container">
           <div className="row border">
+            {/* LOGO */}
             <div className="col-12 col-md-8 col-lg-auto order-1 d-flex justify-content-center justify-content-md-start align-items-center border">
               <img
                 src={lookshopLogo}
@@ -16,13 +17,17 @@ class LogoMenuAndCart extends Component {
                 className="logo-menu-and-cart__logo"
               />
             </div>
+
+            {/* CART */}
             <div className="col-12 col-md-4 col-lg-auto order-2 order-lg-3 border">
               cart (3rd on lg)
             </div>
-            <div className="col-12 col-lg-auto ml-lg-auto order-3 order-lg-2 border">
-              <nav className="navbar navbar-expand-lg">
-                <div className="container">
-                  <span className="navbar-brand d-lg-none">MENU</span>
+
+            {/* NAVBAR */}
+            <div className="col-12 col-lg-auto ml-lg-auto order-3 order-lg-2 border p-lg-0">
+              <nav className="navbar navbar-expand-lg p-lg-0">
+                <div className="container p-lg-0">
+                  <span className="navbar-brand d-lg-none text-white">MENU</span>
 
                   <button
                     className="navbar-toggler"
@@ -33,7 +38,7 @@ class LogoMenuAndCart extends Component {
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                   >
-                    <span className="fas fa-bars" />
+                    <span className="fas fa-bars text-white" />
                   </button>
 
                   <div
