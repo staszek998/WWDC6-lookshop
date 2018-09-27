@@ -70,7 +70,7 @@ class LogoMenuAndCart extends Component {
               {/* DESKTOP VERSION */}
               <div className="row d-none d-lg-flex justify-content-end flex-nowrap desktop-menu">
                 <div className="col-auto">
-                  <div class="dropdown">
+                  <div className="dropdown">
                     <button
                       className="btn bg-transparent dropdown-toggle"
                       type="button"
@@ -95,7 +95,7 @@ class LogoMenuAndCart extends Component {
                   </div>
                 </div>
                 <div className="col-auto">
-                  <div class="dropdown">
+                  <div className="dropdown">
                     <button
                       className="btn bg-transparent dropdown-toggle"
                       type="button"
@@ -120,7 +120,7 @@ class LogoMenuAndCart extends Component {
                   </div>
                 </div>
                 <div className="col-auto">
-                  <div class="dropdown">
+                  <div className="dropdown">
                     <button
                       className="btn bg-transparent dropdown-toggle"
                       type="button"
@@ -145,7 +145,7 @@ class LogoMenuAndCart extends Component {
                   </div>
                 </div>
                 <div className="col-auto">
-                  <div class="dropdown">
+                  <div className="dropdown">
                     <button
                       className="btn bg-transparent dropdown-toggle"
                       type="button"
@@ -170,7 +170,7 @@ class LogoMenuAndCart extends Component {
                   </div>
                 </div>
                 <div className="col-auto">
-                  <div class="dropdown">
+                  <div className="dropdown">
                     <button
                       className="btn bg-transparent dropdown-toggle"
                       type="button"
