@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+
 import lookshopLogo from "../../../images/lookshop-logo.png";
+import NavItem from "./NavItem";
 
 class LogoMenuAndCart extends Component {
   render() {
@@ -39,33 +41,10 @@ class LogoMenuAndCart extends Component {
                     id="navbarResponsive"
                   >
                     <ul className="navbar-nav ml-auto">
-                      <li className="nav-item dropdown">
-                        <div className="nav-link btn-group">
-                          <button type="button" className="btn">
-                            new
-                          </button>
-                          <button
-                            type="button"
-                            className="btn dropdown-toggle dropdown-toggle-split"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                          >
-                            <span className="sr-only">Toggle Dropdown</span>
-                          </button>
-                          <div className="dropdown-menu">
-                            <a className="dropdown-item" href="#">
-                              item 1
-                            </a>
-                            <a className="dropdown-item" href="#">
-                              item 2
-                            </a>
-                            <a className="dropdown-item" href="#">
-                              item 3
-                            </a>
-                          </div>
-                        </div>
-                      </li>
+                      <NavItem
+                        text="new"
+                        dropdownItems={["item 1", "item 123", "item 342"]}
+                      />
                       <li className="nav-item dropdown">
                         <div className="nav-link btn-group">
                           <button type="button" className="btn">
