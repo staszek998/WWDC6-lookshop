@@ -7,198 +7,177 @@ class LogoMenuAndCart extends Component {
       <div className="row border logo-menu-and-cart">
         <div className="container">
           <div className="row border">
-            <div className="col-12 col-md-8 col-lg-3 order-1 d-flex justify-content-center justify-content-md-start align-items-center border">
+            <div className="col-12 col-md-8 col-lg-auto order-1 d-flex justify-content-center justify-content-md-start align-items-center border">
               <img
                 src={lookshopLogo}
                 alt="Logo of the lookshop"
                 className="logo-menu-and-cart__logo"
               />
             </div>
-            <div className="col-12 col-md-4 col-lg-3 order-2 order-lg-3 border">
+            <div className="col-12 col-md-4 col-lg-auto order-2 order-lg-3 border">
               cart (3rd on lg)
             </div>
-            <div className="col-12 col-lg-6 order-3 order-lg-2 border">
-              {/* MOBILE VERSION */}
-              <div className="row d-lg-none mobile-menu">
-                <div className="col-6 d-flex align-items-center">
-                  <span className="text-white">MENU</span>
-                </div>
-                <div className="col-6 d-flex justify-content-end">
-                  <button
-                    className="btn bg-transparent text-white"
-                    data-toggle="collapse"
-                    type="button"
-                    data-target="#mobile-menu"
-                    aria-expanded="false"
-                    aria-controls="mobile-menu"
-                  >
-                    <i className="fas fa-bars" />
-                  </button>
-                </div>
-                <div className="col-12 border collapse p-0" id="mobile-menu">
-                  <div className="list-group">
-                    <a
-                      href="#"
-                      className="list-group-item list-group-item-action"
-                    >
-                      new
-                    </a>
-                    <a
-                      href="#"
-                      className="list-group-item list-group-item-action"
-                    >
-                      designers
-                    </a>
-                    <a
-                      href="#"
-                      className="list-group-item list-group-item-action"
-                    >
-                      women
-                    </a>
-                    <a
-                      href="#"
-                      className="list-group-item list-group-item-action"
-                    >
-                      men
-                    </a>
-                    <a
-                      href="#"
-                      className="list-group-item list-group-item-action"
-                    >
-                      clearance
-                    </a>
-                  </div>
-                </div>
-              </div>
+            <div className="col-12 col-lg-auto ml-lg-auto order-3 order-lg-2 border">
+              <nav className="navbar navbar-expand-lg">
+                <div className="container">
+                  <span className="navbar-brand d-lg-none">MENU</span>
 
-              {/* DESKTOP VERSION */}
-              <div className="row d-none d-lg-flex justify-content-end flex-nowrap desktop-menu">
-                <div className="col-auto">
-                  <div className="dropdown">
-                    <button
-                      className="btn bg-transparent dropdown-toggle"
-                      type="button"
-                      id="new"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      new
-                    </button>
-                    <div className="dropdown-menu" aria-labelledby="new">
-                      <a className="dropdown-item" href="#">
-                        Action
-                      </a>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
-                    </div>
+                  <button
+                    className="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span className="fas fa-bars" />
+                  </button>
+
+                  <div
+                    className="collapse navbar-collapse"
+                    id="navbarResponsive"
+                  >
+                    <ul className="navbar-nav ml-auto">
+                      <li className="nav-item dropdown">
+                        <div className="nav-link btn-group">
+                          <button type="button" className="btn">
+                            new
+                          </button>
+                          <button
+                            type="button"
+                            className="btn dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <span className="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div className="dropdown-menu">
+                            <a className="dropdown-item" href="#">
+                              item 1
+                            </a>
+                            <a className="dropdown-item" href="#">
+                              item 2
+                            </a>
+                            <a className="dropdown-item" href="#">
+                              item 3
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+                      <li className="nav-item dropdown">
+                        <div className="nav-link btn-group">
+                          <button type="button" className="btn">
+                            designers
+                          </button>
+                          <button
+                            type="button"
+                            className="btn dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <span className="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div className="dropdown-menu">
+                            <a className="dropdown-item" href="#">
+                              item 1
+                            </a>
+                            <a className="dropdown-item" href="#">
+                              item 2
+                            </a>
+                            <a className="dropdown-item" href="#">
+                              item 3
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+                      <li className="nav-item dropdown">
+                        <div className="nav-link btn-group">
+                          <button type="button" className="btn">
+                            women
+                          </button>
+                          <button
+                            type="button"
+                            className="btn dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <span className="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div className="dropdown-menu">
+                            <a className="dropdown-item" href="#">
+                              item 1
+                            </a>
+                            <a className="dropdown-item" href="#">
+                              item 2
+                            </a>
+                            <a className="dropdown-item" href="#">
+                              item 3
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+                      <li className="nav-item dropdown">
+                        <div className="nav-link btn-group">
+                          <button type="button" className="btn">
+                            men
+                          </button>
+                          <button
+                            type="button"
+                            className="btn dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <span className="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div className="dropdown-menu">
+                            <a className="dropdown-item" href="#">
+                              item 1
+                            </a>
+                            <a className="dropdown-item" href="#">
+                              item 2
+                            </a>
+                            <a className="dropdown-item" href="#">
+                              item 3
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+                      <li className="nav-item dropdown">
+                        <div className="nav-link btn-group">
+                          <button type="button" className="btn">
+                            clearance
+                          </button>
+                          <button
+                            type="button"
+                            className="btn dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <span className="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div className="dropdown-menu">
+                            <a className="dropdown-item" href="#">
+                              item 1
+                            </a>
+                            <a className="dropdown-item" href="#">
+                              item 2
+                            </a>
+                            <a className="dropdown-item" href="#">
+                              item 3
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div className="col-auto">
-                  <div className="dropdown">
-                    <button
-                      className="btn bg-transparent dropdown-toggle"
-                      type="button"
-                      id="designers"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      designers
-                    </button>
-                    <div className="dropdown-menu" aria-labelledby="designers">
-                      <a className="dropdown-item" href="#">
-                        Action
-                      </a>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-auto">
-                  <div className="dropdown">
-                    <button
-                      className="btn bg-transparent dropdown-toggle"
-                      type="button"
-                      id="women"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      women
-                    </button>
-                    <div className="dropdown-menu" aria-labelledby="women">
-                      <a className="dropdown-item" href="#">
-                        Action
-                      </a>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-auto">
-                  <div className="dropdown">
-                    <button
-                      className="btn bg-transparent dropdown-toggle"
-                      type="button"
-                      id="men"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      men
-                    </button>
-                    <div className="dropdown-menu" aria-labelledby="men">
-                      <a className="dropdown-item" href="#">
-                        Action
-                      </a>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-auto">
-                  <div className="dropdown">
-                    <button
-                      className="btn bg-transparent dropdown-toggle"
-                      type="button"
-                      id="clearance"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      clearance
-                    </button>
-                    <div className="dropdown-menu" aria-labelledby="clearance">
-                      <a className="dropdown-item" href="#">
-                        Action
-                      </a>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </nav>
             </div>
           </div>
         </div>

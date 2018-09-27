@@ -19,16 +19,11 @@
   .header .custom-select option {
     background-color: black; }
 
-.logo-menu-and-cart .mobile-menu {
+.logo-menu-and-cart .navbar {
   background-color: #fd926d; }
-
-.logo-menu-and-cart #mobile-menu a {
-  background-color: transparent;
-  color: white; }
-
-.logo-menu-and-cart .desktop-menu .dropdown-toggle::after {
-  position: absolute;
-  top: 18px; }
+  @media (min-width: 992px) {
+    .logo-menu-and-cart .navbar {
+      background-color: transparent; } }
 
 .logo-menu-and-cart .logo-menu-and-cart__logo {
   width: 143px; }

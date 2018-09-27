@@ -1,19 +1,11 @@
 @import "../../../scss/colors";
 
 .logo-menu-and-cart {
-  .mobile-menu {
+  .navbar {
     background-color: $tangerine;
-  }
 
-  #mobile-menu a {
-    background-color: transparent;
-    color: white;
-  }
-
-  .desktop-menu {
-    .dropdown-toggle::after {
-      position: absolute;
-      top: 18px;
+    @media (min-width: 992px) {
+      background-color: transparent;
     }
   }
 
