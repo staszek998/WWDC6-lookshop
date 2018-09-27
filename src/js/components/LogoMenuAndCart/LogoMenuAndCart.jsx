@@ -45,114 +45,22 @@ class LogoMenuAndCart extends Component {
                         text="new"
                         dropdownItems={["item 1", "item 123", "item 342"]}
                       />
-                      <li className="nav-item dropdown">
-                        <div className="nav-link btn-group">
-                          <button type="button" className="btn">
-                            designers
-                          </button>
-                          <button
-                            type="button"
-                            className="btn dropdown-toggle dropdown-toggle-split"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                          >
-                            <span className="sr-only">Toggle Dropdown</span>
-                          </button>
-                          <div className="dropdown-menu">
-                            <a className="dropdown-item" href="#">
-                              item 1
-                            </a>
-                            <a className="dropdown-item" href="#">
-                              item 2
-                            </a>
-                            <a className="dropdown-item" href="#">
-                              item 3
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-                      <li className="nav-item dropdown">
-                        <div className="nav-link btn-group">
-                          <button type="button" className="btn">
-                            women
-                          </button>
-                          <button
-                            type="button"
-                            className="btn dropdown-toggle dropdown-toggle-split"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                          >
-                            <span className="sr-only">Toggle Dropdown</span>
-                          </button>
-                          <div className="dropdown-menu">
-                            <a className="dropdown-item" href="#">
-                              item 1
-                            </a>
-                            <a className="dropdown-item" href="#">
-                              item 2
-                            </a>
-                            <a className="dropdown-item" href="#">
-                              item 3
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-                      <li className="nav-item dropdown">
-                        <div className="nav-link btn-group">
-                          <button type="button" className="btn">
-                            men
-                          </button>
-                          <button
-                            type="button"
-                            className="btn dropdown-toggle dropdown-toggle-split"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                          >
-                            <span className="sr-only">Toggle Dropdown</span>
-                          </button>
-                          <div className="dropdown-menu">
-                            <a className="dropdown-item" href="#">
-                              item 1
-                            </a>
-                            <a className="dropdown-item" href="#">
-                              item 2
-                            </a>
-                            <a className="dropdown-item" href="#">
-                              item 3
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-                      <li className="nav-item dropdown">
-                        <div className="nav-link btn-group">
-                          <button type="button" className="btn">
-                            clearance
-                          </button>
-                          <button
-                            type="button"
-                            className="btn dropdown-toggle dropdown-toggle-split"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                          >
-                            <span className="sr-only">Toggle Dropdown</span>
-                          </button>
-                          <div className="dropdown-menu">
-                            <a className="dropdown-item" href="#">
-                              item 1
-                            </a>
-                            <a className="dropdown-item" href="#">
-                              item 2
-                            </a>
-                            <a className="dropdown-item" href="#">
-                              item 3
-                            </a>
-                          </div>
-                        </div>
-                      </li>
+                      <NavItem
+                        text="designers"
+                        dropdownItems={["item 1", "item 123", "item 342"]}
+                      />
+                      <NavItem
+                        text="women"
+                        dropdownItems={["item 1", "item 123", "item 342"]}
+                      />
+                      <NavItem
+                        text="men"
+                        dropdownItems={["item 1", "item 123", "item 342"]}
+                      />
+                      <NavItem
+                        text="clearance"
+                        dropdownItems={["item 1", "item 123", "item 342"]}
+                      />
                     </ul>
                   </div>
                 </div>
