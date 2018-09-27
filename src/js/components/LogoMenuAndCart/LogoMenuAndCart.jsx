@@ -8,7 +8,11 @@ class LogoMenuAndCart extends Component {
         <div className="container">
           <div className="row border">
             <div className="col-12 col-md-8 col-lg-3 order-1 d-flex justify-content-center justify-content-md-start align-items-center border">
-              <img src={lookshopLogo} alt="Logo of the lookshop" />
+              <img
+                src={lookshopLogo}
+                alt="Logo of the lookshop"
+                className="logo-menu-and-cart__logo"
+              />
             </div>
             <div className="col-12 col-md-4 col-lg-3 order-2 order-lg-3 border">
               cart (3rd on lg)

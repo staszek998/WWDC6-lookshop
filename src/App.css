@@ -29,3 +29,12 @@
 .logo-menu-and-cart .desktop-menu .dropdown-toggle::after {
   position: absolute;
   top: 18px; }
+
+.logo-menu-and-cart .logo-menu-and-cart__logo {
+  width: 143px; }
+  @media (min-width: 768px) {
+    .logo-menu-and-cart .logo-menu-and-cart__logo {
+      width: 120px; } }
+  @media (min-width: 992px) {
+    .logo-menu-and-cart .logo-menu-and-cart__logo {
+      width: 114px; } }
