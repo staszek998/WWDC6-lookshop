@@ -4,7 +4,7 @@ class NavItem extends Component {
   render() {
     let dropdownItems = this.props.dropdownItems.map(item => {
       return (
-        <a className="dropdown-item text-white" href="#">
+        <a className="dropdown-item" href="#">
           {item}
         </a>
       );
@@ -13,12 +13,12 @@ class NavItem extends Component {
     return (
       <li className="nav-item dropdown">
         <div className="nav-link btn-group">
-          <button type="button" className="btn bg-transparent text-white">
+          <button type="button" className="btn bg-transparent">
             {this.props.text}
           </button>
           <button
             type="button"
-            className="btn dropdown-toggle dropdown-toggle-split bg-transparent text-white"
+            className="btn dropdown-toggle dropdown-toggle-split bg-transparent"
             data-toggle="dropdown"
             aria-haspopup="true"
             aria-expanded="false"

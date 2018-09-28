@@ -24,6 +24,18 @@
   @media (min-width: 992px) {
     .logo-menu-and-cart .navbar {
       background-color: transparent; } }
+  .logo-menu-and-cart .navbar .nav-item a,
+  .logo-menu-and-cart .navbar .nav-item button {
+    color: white;
+    transition: 300ms all ease; }
+    @media (min-width: 992px) {
+      .logo-menu-and-cart .navbar .nav-item a,
+      .logo-menu-and-cart .navbar .nav-item button {
+        color: black; } }
+  .logo-menu-and-cart .navbar .nav-item a:hover {
+    color: #fd926d; }
+  .logo-menu-and-cart .navbar .nav-item .dropdown-menu {
+    border-color: rgba(255, 255, 255, 0.2); }
 
 .logo-menu-and-cart .logo-menu-and-cart__logo {
   width: 143px; }
