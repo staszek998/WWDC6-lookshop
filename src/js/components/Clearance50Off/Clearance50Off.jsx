@@ -3,10 +3,10 @@ import React, { Component } from "react";
 class Clearance50Off extends Component {
   render() {
     return (
-      <div className="row border">
-        <div className="container border">
-          <div className="row border">
-            <div className="col border d-flex justify-content-center">
+      <div className="row ">
+        <div className="container ">
+          <div className="row ">
+            <div className="col  d-flex justify-content-center">
               clearance 50% off
               <ul>
                 <li>
@@ -43,17 +43,17 @@ class Clearance50Off extends Component {
               </ul>
             </div>
           </div>
-          <div className="row border">
-            <div className="col-6 col-md-4 col-lg-3 border">
+          <div className="row ">
+            <div className="col-6 col-md-4 col-lg-3 ">
               col-6, col-md-4, col-lg-3
             </div>
-            <div className="col-6 col-md-4 col-lg-3 border">
+            <div className="col-6 col-md-4 col-lg-3 ">
               col-6, col-md-4, col-lg-3
             </div>
-            <div className="d-none d-md-block col-4 col-lg-3 border">
+            <div className="d-none d-md-block col-4 col-lg-3 ">
               d-none, d-md-block, col-md-4, col-lg-3
             </div>
-            <div className="d-none d-lg-block col-3 border">
+            <div className="d-none d-lg-block col-3 ">
               d-none, d-lg-block, col-lg-3
             </div>
           </div>

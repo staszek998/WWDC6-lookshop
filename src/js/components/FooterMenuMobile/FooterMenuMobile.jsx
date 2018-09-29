@@ -3,10 +3,10 @@ import React, { Component } from "react";
 class FooterMenuMobile extends Component {
   render() {
     return (
-      <footer className="row border d-md-none">
-        <div className="container border">
-          <div className="row border">
-            <div className="col-6 border">
+      <footer className="row  d-md-none">
+        <div className="container ">
+          <div className="row ">
+            <div className="col-6 ">
               <button
                 data-toggle="collapse"
                 type="button"
@@ -25,8 +25,8 @@ class FooterMenuMobile extends Component {
                 button
               </button>
             </div>
-            <div className="col-6 border">&copy; copyright</div>
-            <div className="col-12 border collapse" id="footer-links">
+            <div className="col-6 ">&copy; copyright</div>
+            <div className="col-12  collapse" id="footer-links">
               footer links
               <ul>
                 <li>list item</li>

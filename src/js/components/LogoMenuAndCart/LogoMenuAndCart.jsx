@@ -6,11 +6,11 @@ import NavItem from "./NavItem";
 class LogoMenuAndCart extends Component {
   render() {
     return (
-      <div className="row border logo-menu-and-cart">
+      <div className="row logo-menu-and-cart">
         <div className="container">
-          <div className="row border">
+          <div className="row">
             {/* LOGO */}
-            <div className="col-12 col-md-8 col-lg-auto order-1 d-flex justify-content-center justify-content-md-start align-items-center border">
+            <div className="col-12 col-md-8 col-lg-auto order-1 d-flex justify-content-center justify-content-md-start align-items-center">
               <img
                 src={lookshopLogo}
                 alt="Logo of the lookshop"
@@ -19,15 +19,17 @@ class LogoMenuAndCart extends Component {
             </div>
 
             {/* CART */}
-            <div className="col-12 col-md-4 col-lg-auto order-2 order-lg-3 border">
+            <div className="col-12 col-md-4 col-lg-auto order-2 order-lg-3">
               cart (3rd on lg)
             </div>
 
             {/* NAVBAR */}
-            <div className="col-12 col-lg-auto ml-lg-auto order-3 order-lg-2 border p-lg-0">
+            <div className="col-12 col-lg-auto ml-lg-auto order-3 order-lg-2 p-lg-0">
               <nav className="navbar navbar-expand-lg p-lg-0">
                 <div className="container p-lg-0">
-                  <span className="navbar-brand d-lg-none text-white">MENU</span>
+                  <span className="navbar-brand d-lg-none text-white">
+                    MENU
+                  </span>
 
                   <button
                     className="navbar-toggler"
