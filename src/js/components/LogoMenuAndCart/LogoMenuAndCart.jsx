@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import lookshopLogo from "../../../images/lookshop-logo.png";
 import NavItem from "./NavItem";
+import Cart from "./Cart";
 
 class LogoMenuAndCart extends Component {
   render() {
@@ -20,7 +21,7 @@ class LogoMenuAndCart extends Component {
 
             {/* CART */}
             <div className="col-12 col-md-4 col-lg-auto order-2 order-lg-3">
-              cart (3rd on lg)
+              <Cart />
             </div>
 
             {/* NAVBAR */}
