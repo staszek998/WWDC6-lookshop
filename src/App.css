@@ -45,3 +45,11 @@
   @media (min-width: 992px) {
     .logo-menu-and-cart .logo-menu-and-cart__logo {
       width: 114px; } }
+
+.logo-menu-and-cart .cart .dropdown .dropdown-toggle {
+  position: relative; }
+  .logo-menu-and-cart .cart .dropdown .dropdown-toggle::after {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%); }
