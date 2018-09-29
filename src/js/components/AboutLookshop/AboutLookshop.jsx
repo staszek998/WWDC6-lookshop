@@ -3,12 +3,12 @@ import React, { Component } from "react";
 class AboutLookshop extends Component {
   render() {
     return (
-      <div className="container  d-none d-md-block">
-        <div className="row ">
-          <div className="col  text-center">about lookshop</div>
+      <div className="container border d-none d-md-block">
+        <div className="row border">
+          <div className="col border text-center">about lookshop</div>
         </div>
-        <div className="row ">
-          <div className="col  text-center">
+        <div className="row border">
+          <div className="col border text-center">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
             ipsum, porro distinctio quas pariatur quibusdam quos quis eveniet,
             deleniti voluptates quae necessitatibus tempora? Repudiandae
