@@ -53,3 +53,6 @@
     top: 50%;
     right: 12px;
     transform: translateY(-50%); }
+
+.logo-menu-and-cart .cart .summary {
+  text-transform: uppercase; }
