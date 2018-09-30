@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class CarouselIndicators extends Component {
   render() {
     return (
-      <ol className="carousel-indicators">
+      <ol className="carousel-indicators m-0">
         <li
           data-target="#carouselExampleIndicators"
           data-slide-to="0"
