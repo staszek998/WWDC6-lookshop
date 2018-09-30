@@ -1,15 +1,14 @@
 .header {
-  color: white;
-  background-color: black;
+  background-color: white;
 
-  .header__left-column {
-    background-color: white;
-    color: black;
+  .header__right-column {
+    background-color: black;
+    color: white;
+  }
 
-    @media (min-width: 768px) {
-      background-color: black;
-      color: white;
-    }
+  @media (min-width: 768px) {
+    background-color: black;
+    color: white;
   }
 
   .custom-select {
