@@ -60,3 +60,21 @@
 
 .logo-menu-and-cart .cart .summary {
   text-transform: uppercase; }
+
+.hero-slider {
+  position: relative; }
+  .hero-slider .carousel-control-prev,
+  .hero-slider .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 117px;
+    background-color: #ffffff; }
+    .hero-slider .carousel-control-prev i,
+    .hero-slider .carousel-control-next i {
+      color: black; }
+  .hero-slider .carousel-control-prev {
+    left: 0; }
+  .hero-slider .carousel-control-next {
+    right: 0; }

@@ -1,2 +1,25 @@
 .hero-slider {
+  position: relative;
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 117px;
+    background-color: #ffffff;
+
+    i {
+      color: black;
+    }
+  }
+
+  .carousel-control-prev {
+    left: 0;
+  }
+
+  .carousel-control-next {
+    right: 0;
+  }
 }
