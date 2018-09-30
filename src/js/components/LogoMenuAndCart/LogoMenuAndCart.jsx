@@ -1,17 +1,78 @@
 import React, { Component } from "react";
 
+import lookshopLogo from "../../../images/lookshop-logo.png";
+import NavItem from "./NavItem";
+import Cart from "./Cart";
+
 class LogoMenuAndCart extends Component {
   render() {
     return (
-      <div className="row border">
+      <div className="row logo-menu-and-cart">
         <div className="container">
-          <div className="row border">
-            <div className="col-12 col-md-8 col-lg-3 order-1 border">logo</div>
-            <div className="col-12 col-md-4 col-lg-3 order-2 order-lg-3 border">
-              cart (3rd on lg)
+          <div className="row py-3">
+            {/* LOGO */}
+            <div className="col-12 col-md-8 col-lg-2 order-1 d-flex justify-content-center justify-content-md-start align-items-center">
+              <img
+                src={lookshopLogo}
+                alt="Logo of the lookshop"
+                className="logo-menu-and-cart__logo"
+              />
             </div>
-            <div className="col-12 col-lg-6 order-3 order-lg-2 border">
-              menu (2nd on lg)
+
+            {/* CART */}
+            <div className="col-12 col-md-4 col-lg-2 order-2 order-lg-3 mt-3 mt-md-0 p-lg-0">
+              <Cart />
+            </div>
+
+            {/* NAVBAR */}
+            <div className="col-12 col-lg-8 d-lg-flex justify-content-end ml-lg-auto order-3 order-lg-2 p-lg-0 align-items-middle mt-3 mt-lg-0">
+              <nav className="navbar navbar-expand-lg p-lg-0">
+                <div className="container p-lg-0">
+                  <span className="navbar-brand d-lg-none text-white">
+                    MENU
+                  </span>
+
+                  <button
+                    className="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span className="fas fa-bars text-white" />
+                  </button>
+
+                  <div
+                    className="collapse navbar-collapse"
+                    id="navbarResponsive"
+                  >
+                    <ul className="navbar-nav ml-auto">
+                      <NavItem
+                        text="new"
+                        dropdownItems={["item 1", "item 123", "item 342"]}
+                      />
+                      <NavItem
+                        text="designers"
+                        dropdownItems={["item 1", "item 123", "item 342"]}
+                      />
+                      <NavItem
+                        text="women"
+                        dropdownItems={["item 1", "item 123", "item 342"]}
+                      />
+                      <NavItem
+                        text="men"
+                        dropdownItems={["item 1", "item 123", "item 342"]}
+                      />
+                      <NavItem
+                        text="clearance"
+                        dropdownItems={["item 1", "item 123", "item 342"]}
+                      />
+                    </ul>
+                  </div>
+                </div>
+              </nav>
             </div>
           </div>
         </div>
