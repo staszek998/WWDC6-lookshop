@@ -35,7 +35,11 @@
   .logo-menu-and-cart .navbar .nav-item a:hover {
     color: #fd926d; }
   .logo-menu-and-cart .navbar .nav-item .dropdown-menu {
-    border-color: rgba(255, 255, 255, 0.2); }
+    border-color: rgba(255, 255, 255, 0.2);
+    background: transparent; }
+    @media (min-width: 992px) {
+      .logo-menu-and-cart .navbar .nav-item .dropdown-menu {
+        background-color: white; } }
 
 .logo-menu-and-cart .logo-menu-and-cart__logo {
   width: 143px; }

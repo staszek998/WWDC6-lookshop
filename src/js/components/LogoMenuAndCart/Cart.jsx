@@ -3,8 +3,8 @@ import React, { Component } from "react";
 class Cart extends Component {
   render() {
     return (
-      <div className="cart">
-        <div className="row d-none d-md-flex">
+      <div className="container cart">
+        <div className="row d-none d-md-flex border rounded-0">
           <div className="dropdown w-100">
             <button
               className="btn btn-block dropdown-toggle bg-transparent text-left"
@@ -29,11 +29,13 @@ class Cart extends Component {
             </div>
           </div>
         </div>
-        <div className="row">
-          <div className="col">
-            <i className="fas fa-shopping-bag" />
+        <div className="row justify-content-between border rounded-0 bg-light py-1 flex-nowrap">
+          <div className="col-auto">
+            <a href="#" className="text-dark">
+              <i className="fas fa-shopping-bag" />
+            </a>
           </div>
-          <div className="col text-right summary">0 items | $ 0</div>
+          <div className="col-auto text-right summary">0 items | $ 0</div>
         </div>
       </div>
     );

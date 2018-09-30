@@ -26,6 +26,11 @@
 
       .dropdown-menu {
         border-color: rgba($color: white, $alpha: 0.2);
+        background: transparent;
+
+        @media (min-width: 992px) {
+          background-color: white;
+        }
       }
     }
   }
