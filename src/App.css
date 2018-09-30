@@ -77,3 +77,12 @@
     left: 0; }
   .hero-slider .carousel-control-next {
     right: 0; }
+  .hero-slider .carousel-indicators {
+    position: unset; }
+    .hero-slider .carousel-indicators li {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #867a76; }
+      .hero-slider .carousel-indicators li.active {
+        background-color: #fd926d; }

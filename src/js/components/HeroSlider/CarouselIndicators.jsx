@@ -7,10 +7,18 @@ class CarouselIndicators extends Component {
         <li
           data-target="#carouselExampleIndicators"
           data-slide-to="0"
-          className="active"
+          className="mx-2 active"
         />
-        <li data-target="#carouselExampleIndicators" data-slide-to="1" />
-        <li data-target="#carouselExampleIndicators" data-slide-to="2" />
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="1"
+          className="mx-2"
+        />
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="2"
+          className="mx-2"
+        />
       </ol>
     );
   }
