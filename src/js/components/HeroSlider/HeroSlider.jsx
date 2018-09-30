@@ -16,8 +16,6 @@ class HeroSlider extends Component {
             className="carousel slide"
             data-ride="carousel"
           >
-            <CarouselIndicators />
-
             {/* Carousel items */}
             <div className="carousel-inner">
               <CarouselItem
@@ -33,6 +31,9 @@ class HeroSlider extends Component {
             <CarouselControl type="prev" />
             <CarouselControl type="next" />
           </div>
+        </div>
+        <div className="col-12 py-4">
+          <CarouselIndicators />
         </div>
       </div>
     );

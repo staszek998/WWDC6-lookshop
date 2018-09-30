@@ -1,6 +1,8 @@
-.hero-slider {
-  position: relative;
+@import "../../../scss/colors";
 
+.hero-slider {
+  // Styles for the carousel controls
+  position: relative;
   .carousel-control-prev,
   .carousel-control-next {
     position: absolute;
@@ -21,5 +23,21 @@
 
   .carousel-control-next {
     right: 0;
+  }
+
+  // Styles for the carousel indicators
+  .carousel-indicators {
+    position: unset;
+
+    li {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $darkGray;
+
+      &.active {
+        background-color: $tangerine;
+      }
+    }
   }
 }
