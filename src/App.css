@@ -61,7 +61,8 @@
   text-transform: uppercase; }
 
 .hero-slider {
-  position: relative; }
+  position: relative;
+  margin-bottom: 74px; }
   .hero-slider .carousel-control-prev,
   .hero-slider .carousel-control-next {
     position: absolute;
@@ -78,7 +79,10 @@
   .hero-slider .carousel-control-next {
     right: 0; }
   .hero-slider .carousel-indicators {
-    position: unset; }
+    position: absolute;
+    bottom: -42px;
+    left: 50%;
+    transform: translateX(-50%); }
     .hero-slider .carousel-indicators li {
       width: 10px;
       height: 10px;
