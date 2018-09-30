@@ -22,8 +22,8 @@ class Main extends Component {
         <main className="d-flex flex-column">
           <Header />
           <LogoMenuAndCart />
-          {/* <HeroSlider />
-          <NewsletterAndSocialMedia />
+          <HeroSlider />
+          {/* <NewsletterAndSocialMedia />
           <OffersCollage />
           <SelectOrTabs />
           <Clearance50Off />
