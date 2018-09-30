@@ -27,9 +27,7 @@ class HeroSlider extends Component {
               <CarouselItem imgSrc={tmpSlide} imgAlt="Sample image alt text" />
             </div>
 
-            <div className="col-12 py-4">
-              <CarouselIndicators />
-            </div>
+            <CarouselIndicators />
 
             {/* Carousel controls */}
             <CarouselControl type="prev" />

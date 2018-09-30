@@ -27,7 +27,10 @@
 
   // Styles for the carousel indicators
   .carousel-indicators {
-    position: unset;
+    position: absolute;
+    bottom: -42px;
+    left: 50%;
+    transform: translateX(-50%);
 
     li {
       width: 10px;
@@ -40,4 +43,6 @@
       }
     }
   }
+
+  margin-bottom: 74px;
 }
