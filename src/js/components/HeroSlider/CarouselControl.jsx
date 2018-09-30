@@ -11,11 +11,10 @@ class CarouselControl extends Component {
         role="button"
         data-slide={this.props.type === "prev" ? "prev" : "next"}
       >
-        <span
-          className={`carousel-control-${
-            this.props.type === "prev" ? "prev" : "next"
-          }-icon`}
-          aria-hidden="true"
+        <i
+          className={`fas fa-chevron-${
+            this.props.type === "prev" ? "left" : "right"
+          }`}
         />
         <span className="sr-only">
           {this.props.type === "prev" ? "Previous" : "Next"}
