@@ -1,6 +1,7 @@
 @import "../../../scss/colors";
 
 .logo-menu-and-cart {
+  // NAVBAR
   .navbar {
     background-color: $tangerine;
 
@@ -25,21 +26,45 @@
 
       .dropdown-menu {
         border-color: rgba($color: white, $alpha: 0.2);
+        background: transparent;
+
+        @media (min-width: 992px) {
+          background-color: white;
+        }
       }
     }
   }
 
+  // LOGO
   .logo-menu-and-cart__logo {
     width: 143px;
 
-    // Medium devices (tablets, 768px and up)
     @media (min-width: 768px) {
       width: 120px;
     }
 
-    // Large devices (desktops, 992px and up)
     @media (min-width: 992px) {
       width: 114px;
+    }
+  }
+
+  // CART
+  .cart {
+    .dropdown {
+      .dropdown-toggle {
+        position: relative;
+
+        &::after {
+          position: absolute;
+          top: 50%;
+          right: 12px;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    .summary {
+      text-transform: uppercase;
     }
   }
 }

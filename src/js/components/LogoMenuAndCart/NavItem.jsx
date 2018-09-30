@@ -2,9 +2,9 @@ import React, { Component } from "react";
 
 class NavItem extends Component {
   render() {
-    let dropdownItems = this.props.dropdownItems.map(item => {
+    let dropdownItems = this.props.dropdownItems.map((item, index) => {
       return (
-        <a className="dropdown-item" href="#">
+        <a className="dropdown-item" href="#" key={index}>
           {item}
         </a>
       );
@@ -13,7 +13,7 @@ class NavItem extends Component {
     return (
       <li className="nav-item dropdown">
         <div className="nav-link btn-group">
-          <button type="button" className="btn bg-transparent">
+          <button type="button" className="btn bg-transparent p-0">
             {this.props.text}
           </button>
           <button
@@ -25,7 +25,7 @@ class NavItem extends Component {
           >
             <span className="sr-only">Toggle Dropdown</span>
           </button>
-          <div className="dropdown-menu bg-transparent">{dropdownItems}</div>
+          <div className="dropdown-menu border">{dropdownItems}</div>
         </div>
       </li>
     );
