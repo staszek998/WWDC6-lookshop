@@ -7,15 +7,14 @@
   margin-right: -15px; }
 
 .header {
-  color: white;
-  background-color: black; }
-  .header .header__left-column {
-    background-color: white;
-    color: black; }
-    @media (min-width: 768px) {
-      .header .header__left-column {
-        background-color: black;
-        color: white; } }
+  background-color: white; }
+  .header .header__right-column {
+    background-color: black;
+    color: white; }
+  @media (min-width: 768px) {
+    .header {
+      background-color: black;
+      color: white; } }
   .header .custom-select option {
     background-color: black; }
 
