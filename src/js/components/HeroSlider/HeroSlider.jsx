@@ -10,7 +10,7 @@ class HeroSlider extends Component {
   render() {
     return (
       <div className="row d-none d-md-flex hero-slider">
-        <div className="col-12 ">
+        <div className="col-12 p-0">
           <div
             id="carouselExampleIndicators"
             className="carousel slide"
