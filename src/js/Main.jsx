@@ -23,8 +23,8 @@ class Main extends Component {
           <Header />
           <LogoMenuAndCart />
           <HeroSlider />
-          {/* <NewsletterAndSocialMedia />
-          <OffersCollage />
+          <NewsletterAndSocialMedia />
+          {/* <OffersCollage />
           <SelectOrTabs />
           <Clearance50Off />
           <FavouriteBrands />
