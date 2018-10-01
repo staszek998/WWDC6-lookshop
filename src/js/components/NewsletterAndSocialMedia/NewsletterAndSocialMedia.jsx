@@ -5,7 +5,7 @@ import NewsletterSubscription from "./NewsletterSubscription";
 class NewsletterAndSocialMedia extends Component {
   render() {
     return (
-      <div className="row border">
+      <div className="row newsletter-and-social-media text-secondary">
         <div className="container">
           <div className="row">
             <NewsletterSubscription />
