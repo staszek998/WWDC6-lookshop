@@ -1,0 +1,14 @@
+@import "../../../scss/colors";
+
+.newsletter-and-social-media {
+  background-color: #ededed;
+
+  .newsletter {
+    .input-group-append {
+      button {
+        border-bottom: 3px solid #dd6b44;
+        background-color: $tangerine;
+      }
+    }
+  }
+}
