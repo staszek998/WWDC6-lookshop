@@ -90,3 +90,12 @@
       background-color: #867a76; }
       .hero-slider .carousel-indicators li.active {
         background-color: #fd926d; }
+  .hero-slider .carousel-item {
+    height: 40vw; }
+    .hero-slider .carousel-item .main-row {
+      position: relative; }
+      .hero-slider .carousel-item .main-row .bg-image {
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        object-fit: cover; }

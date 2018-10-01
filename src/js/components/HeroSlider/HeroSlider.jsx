@@ -4,7 +4,9 @@ import CarouselIndicators from "./CarouselIndicators";
 import CarouselItem from "./CarouselItem";
 import CarouselControl from "./CarouselControl";
 
-import tmpSlide from "../../../images/hero-slider/tmp-slide.png";
+import tmpSlide1 from "../../../images/hero-slider/tmp-slide-1.jpg";
+import tmpSlide2 from "../../../images/hero-slider/tmp-slide-2.jpg";
+import tmpSlide3 from "../../../images/hero-slider/tmp-slide-3.png";
 
 class HeroSlider extends Component {
   render() {
@@ -20,13 +22,14 @@ class HeroSlider extends Component {
             <div className="carousel-inner">
               <CarouselItem
                 active={true}
-                imgSrc={tmpSlide}
+                imgSrc={tmpSlide1}
                 imgAlt="Sample image alt text"
               />
-              <CarouselItem imgSrc={tmpSlide} imgAlt="Sample image alt text" />
-              <CarouselItem imgSrc={tmpSlide} imgAlt="Sample image alt text" />
+              <CarouselItem imgSrc={tmpSlide2} imgAlt="Sample image alt text" />
+              <CarouselItem imgSrc={tmpSlide3} imgAlt="Sample image alt text" />
             </div>
 
+            {/* Carousel indicators */}
             <CarouselIndicators />
 
             {/* Carousel controls */}

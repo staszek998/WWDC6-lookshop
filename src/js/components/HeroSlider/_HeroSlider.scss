@@ -45,4 +45,20 @@
   }
 
   margin-bottom: 74px;
+
+  // Styles for the carousel items
+  .carousel-item {
+    height: 40vw;
+    
+    .main-row {
+      position: relative;
+
+      .bg-image {
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
 }
