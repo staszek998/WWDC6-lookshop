@@ -59,3 +59,43 @@
 
 .logo-menu-and-cart .cart .summary {
   text-transform: uppercase; }
+
+.hero-slider {
+  position: relative;
+  margin-bottom: 74px; }
+  .hero-slider .carousel-control-prev,
+  .hero-slider .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 117px;
+    background-color: #ffffff; }
+    .hero-slider .carousel-control-prev i,
+    .hero-slider .carousel-control-next i {
+      color: black; }
+  .hero-slider .carousel-control-prev {
+    left: 0; }
+  .hero-slider .carousel-control-next {
+    right: 0; }
+  .hero-slider .carousel-indicators {
+    position: absolute;
+    bottom: -42px;
+    left: 50%;
+    transform: translateX(-50%); }
+    .hero-slider .carousel-indicators li {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #867a76; }
+      .hero-slider .carousel-indicators li.active {
+        background-color: #fd926d; }
+  .hero-slider .carousel-item {
+    height: 40vw; }
+    .hero-slider .carousel-item .main-row {
+      position: relative; }
+      .hero-slider .carousel-item .main-row .bg-image {
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        object-fit: cover; }

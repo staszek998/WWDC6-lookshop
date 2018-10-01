@@ -1,0 +1,64 @@
+@import "../../../scss/colors";
+
+.hero-slider {
+  // Styles for the carousel controls
+  position: relative;
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 117px;
+    background-color: #ffffff;
+
+    i {
+      color: black;
+    }
+  }
+
+  .carousel-control-prev {
+    left: 0;
+  }
+
+  .carousel-control-next {
+    right: 0;
+  }
+
+  // Styles for the carousel indicators
+  .carousel-indicators {
+    position: absolute;
+    bottom: -42px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    li {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $darkGray;
+
+      &.active {
+        background-color: $tangerine;
+      }
+    }
+  }
+
+  margin-bottom: 74px;
+
+  // Styles for the carousel items
+  .carousel-item {
+    height: 40vw;
+    
+    .main-row {
+      position: relative;
+
+      .bg-image {
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
