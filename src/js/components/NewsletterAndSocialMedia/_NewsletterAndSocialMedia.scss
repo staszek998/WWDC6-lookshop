@@ -20,4 +20,16 @@
       }
     }
   }
+
+  .social-media-icons {
+    button {
+      background-color: rgb(247, 247, 247);
+      height: 100%;
+      width: 50px;
+
+      &:nth-child(3) {
+        background-color: rgb(237, 237, 237);
+      }
+    }
+  }
 }

@@ -113,3 +113,10 @@
 .newsletter-and-social-media .newsletter .input-group-append button {
   border-bottom: 3px solid #dd6b44;
   background-color: #fd926d; }
+
+.newsletter-and-social-media .social-media-icons button {
+  background-color: #f7f7f7;
+  height: 100%;
+  width: 50px; }
+  .newsletter-and-social-media .social-media-icons button:nth-child(3) {
+    background-color: #ededed; }
