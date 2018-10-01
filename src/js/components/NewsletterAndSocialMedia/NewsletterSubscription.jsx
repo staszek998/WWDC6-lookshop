@@ -16,13 +16,13 @@ class NewsletterSubscription extends Component {
               name="email"
               id="email"
               type="text"
-              className="form-control"
+              className="form-control rounded-0"
               placeholder="Your e-mail address"
             />
 
             {/* Plus sign (button) */}
             <div className="input-group-append">
-              <button className="btn btn-outline-secondary" type="button">
+              <button className="btn btn-outline-secondary rounded-0" type="button">
                 <i className="fas fa-plus" />
               </button>
             </div>
