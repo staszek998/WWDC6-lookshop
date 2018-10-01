@@ -1,9 +1,18 @@
 @import "../../../scss/colors";
 
 .newsletter-and-social-media {
-  background-color: #ededed;
+  @media (min-width: 768px) {
+    background-color: #ededed;
+  }
 
   .newsletter {
+    input {
+      background-color: #ededed;
+
+      @media (min-width: 768px) {
+        background-color: white;
+      }
+    }
     .input-group-append {
       button {
         border-bottom: 3px solid #dd6b44;

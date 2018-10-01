@@ -100,8 +100,16 @@
         height: 100%;
         object-fit: cover; }
 
-.newsletter-and-social-media {
+@media (min-width: 768px) {
+  .newsletter-and-social-media {
+    background-color: #ededed; } }
+
+.newsletter-and-social-media .newsletter input {
   background-color: #ededed; }
-  .newsletter-and-social-media .newsletter .input-group-append button {
-    border-bottom: 3px solid #dd6b44;
-    background-color: #fd926d; }
+  @media (min-width: 768px) {
+    .newsletter-and-social-media .newsletter input {
+      background-color: white; } }
+
+.newsletter-and-social-media .newsletter .input-group-append button {
+  border-bottom: 3px solid #dd6b44;
+  background-color: #fd926d; }
