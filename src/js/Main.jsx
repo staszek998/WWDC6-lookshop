@@ -33,6 +33,8 @@ class Main extends Component {
           <FooterTop />
           <FooterBottom />
           <FooterMenuMobile /> */}
+
+          <div className="spacer" style={{ height: "500px" }} />
         </main>
       </Router>
     );
