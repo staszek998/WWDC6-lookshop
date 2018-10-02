@@ -131,3 +131,15 @@
     background-color: #ededed; }
   .newsletter-and-social-media .social-media-icons button:focus, .newsletter-and-social-media .social-media-icons button.focus {
     z-index: 1; }
+
+.offers-collage {
+  height: 250px; }
+  .offers-collage .offer-col {
+    border: 2px solid white; }
+  .offers-collage .offer {
+    position: relative; }
+    .offers-collage .offer .background {
+      position: absolute;
+      object-fit: cover;
+      width: 100%;
+      height: 100%; }
