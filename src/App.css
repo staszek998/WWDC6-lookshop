@@ -129,3 +129,5 @@
     background-color: #f7f7f7; }
   .newsletter-and-social-media .social-media-icons button.twitter {
     background-color: #ededed; }
+  .newsletter-and-social-media .social-media-icons button:focus, .newsletter-and-social-media .social-media-icons button.focus {
+    z-index: 1; }

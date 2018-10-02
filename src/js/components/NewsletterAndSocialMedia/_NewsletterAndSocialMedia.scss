@@ -39,6 +39,11 @@
       &.twitter {
         background-color: $lightGray;
       }
+
+      &:focus,
+      &.focus {
+        z-index: 1;
+      }
     }
   }
 }
