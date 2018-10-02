@@ -2,7 +2,7 @@
 
 .newsletter-and-social-media {
   @media (min-width: 768px) {
-    background-color: #ededed;
+    background-color: $lightGray;
   }
 
   .newsletter {
@@ -25,10 +25,19 @@
     button {
       background-color: rgb(247, 247, 247);
       height: 100%;
-      width: 50px;
+      width: 41px;
 
-      &:nth-child(3) {
-        background-color: rgb(237, 237, 237);
+      @media (min-width: 768px) {
+        width: 55px;
+      }
+
+      &.facebook,
+      &.pinterest {
+        background-color: $veryLightGray;
+      }
+
+      &.twitter {
+        background-color: $lightGray;
       }
     }
   }
