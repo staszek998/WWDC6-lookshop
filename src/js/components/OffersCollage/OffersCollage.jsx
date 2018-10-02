@@ -1,18 +1,28 @@
 import React, { Component } from "react";
 
+import Offer from "./Offer";
+
 class OffersCollage extends Component {
   render() {
     return (
       <div className="container d-none d-md-block">
         <div className="row">
-          <div className="col">offer</div>
+          <div className="col">
+            <Offer />
+          </div>
           <div className="col">
             <div className="row">
-              <div className="col">offer</div>
+              <div className="col">
+                <Offer />
+              </div>
             </div>
             <div className="row">
-              <div className="col">offer</div>
-              <div className="col">offer</div>
+              <div className="col">
+                <Offer />
+              </div>
+              <div className="col">
+                <Offer />
+              </div>
             </div>
           </div>
         </div>
