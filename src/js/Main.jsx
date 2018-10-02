@@ -24,8 +24,8 @@ class Main extends Component {
           <LogoMenuAndCart />
           <HeroSlider />
           <NewsletterAndSocialMedia />
-          {/* <OffersCollage />
-          <SelectOrTabs />
+          <OffersCollage />
+          {/* <SelectOrTabs />
           <Clearance50Off />
           <FavouriteBrands />
           <AboutLookshop />
