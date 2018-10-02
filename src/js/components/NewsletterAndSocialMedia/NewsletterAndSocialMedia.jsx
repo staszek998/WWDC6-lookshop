@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import NewsletterSubscription from "./NewsletterSubscription";
+import SocialMediaIcons from "./SocialMediaIcons";
 
 class NewsletterAndSocialMedia extends Component {
   render() {
@@ -9,7 +10,7 @@ class NewsletterAndSocialMedia extends Component {
         <div className="container">
           <div className="row">
             <NewsletterSubscription />
-            <div className="col-12 col-md-6">social media icons</div>
+            <SocialMediaIcons />
           </div>
         </div>
       </div>

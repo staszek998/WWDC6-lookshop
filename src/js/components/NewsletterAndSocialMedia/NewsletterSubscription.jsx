@@ -16,7 +16,7 @@ class NewsletterSubscription extends Component {
               name="email"
               id="email"
               type="text"
-              className="form-control rounded-0 bg-white font-italic h-100 border-0"
+              className="form-control rounded-0 font-italic h-100 border-0"
               placeholder="Your e-mail address"
             />
 

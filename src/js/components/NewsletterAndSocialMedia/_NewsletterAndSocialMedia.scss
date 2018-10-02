@@ -1,13 +1,48 @@
 @import "../../../scss/colors";
 
 .newsletter-and-social-media {
-  background-color: #ededed;
+  @media (min-width: 768px) {
+    background-color: $lightGray;
+  }
 
   .newsletter {
+    input {
+      background-color: #ededed;
+
+      @media (min-width: 768px) {
+        background-color: white;
+      }
+    }
     .input-group-append {
       button {
         border-bottom: 3px solid #dd6b44;
         background-color: $tangerine;
+      }
+    }
+  }
+
+  .social-media-icons {
+    button {
+      background-color: rgb(247, 247, 247);
+      height: 100%;
+      width: 41px;
+
+      @media (min-width: 768px) {
+        width: 55px;
+      }
+
+      &.facebook,
+      &.pinterest {
+        background-color: $veryLightGray;
+      }
+
+      &.twitter {
+        background-color: $lightGray;
+      }
+
+      &:focus,
+      &.focus {
+        z-index: 1;
       }
     }
   }
