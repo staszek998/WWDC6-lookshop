@@ -7,6 +7,16 @@ import { dresses } from "../../../../database/clothes/dresses";
 // import img2 from "../../../../../images/database/clothes/dresses/lee/1.jpg";
 
 class Products extends Component {
+  state = {
+    collapsed: true
+  };
+
+  buttonClickHandler = () => {
+    this.setState({
+      collapsed: !this.state.collapsed
+    });
+  };
+
   render() {
     return (
       <div className="row products">
@@ -36,8 +46,9 @@ class Products extends Component {
             data-target="#hiddenProducts"
             aria-expanded="false"
             aria-controls="hiddenProducts"
+            onClick={this.buttonClickHandler}
           >
-            LOAD MORE
+            {this.state.collapsed ? "LOAD MORE" : "SHOW LESS"}
           </button>
         </div>
       </div>
