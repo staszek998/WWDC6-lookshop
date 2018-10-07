@@ -24,8 +24,24 @@ class Mobile extends Component {
           {/* Collapsed content */}
           <div className="col-12">
             <div className="collapse" id="select-or-tabs__dropdown-content">
-              {/* here goes my list */}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus deleniti quidem obcaecati exercitationem sequi eius molestiae, corporis at possimus maiores voluptate. Maxime suscipit saepe, ipsum fugit officia rem praesentium! Labore!
+              <a
+                href="#"
+                className="btn btn-link btn-block text-white text-left"
+              >
+                DESIGNERS
+              </a>
+              <a
+                href="#"
+                className="btn btn-link btn-block text-white text-left"
+              >
+                FEATURED
+              </a>
+              <a
+                href="#"
+                className="btn btn-link btn-block text-white text-left"
+              >
+                LATEST
+              </a>
             </div>
           </div>
         </div>
