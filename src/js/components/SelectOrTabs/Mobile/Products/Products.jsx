@@ -1,13 +1,17 @@
 import React, { Component } from "react";
+
 import Product from "./Product/Product";
+
+import img1 from "../../../../../images/database/clothes/dresses/king-louie/1.jpg";
+import img2 from "../../../../../images/database/clothes/dresses/lee/1.jpg";
 
 class Products extends Component {
   render() {
     return (
       <div className="row products">
         {/* Products shown by default */}
-        <Product />
-        <Product />
+        <Product imgSrc={img1} />
+        <Product imgSrc={img2} />
 
         {/* Products initially collapsed */}
         <div className="col-12 collapse" id="hiddenProducts">

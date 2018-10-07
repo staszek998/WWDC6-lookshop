@@ -140,6 +140,13 @@
 .offers-collage .offer-col {
   border: 2px solid white; }
 
+.product img {
+  object-fit: cover;
+  width: 100%; }
+
+.product .wrapper {
+  background-color: #f7f7f7; }
+
 .select-or-tabs .mobile .select {
   background-color: #f4845d; }
   .select-or-tabs .mobile .select select {
