@@ -9,14 +9,15 @@ class Mobile extends Component {
           {/* Toggler button */}
           <div className="col-12">
             <a
-              className="btn btn-block text-white"
+              className="btn btn-block text-white text-left d-flex justify-content-between align-items-center"
               data-toggle="collapse"
               href="#select-or-tabs__dropdown-content"
               role="button"
               aria-expanded="false"
               aria-controls="select-or-tabs__dropdown-content"
             >
-              Link with href
+              <span className="dropdown-toggler__text">WHAT'S HOT?</span>
+              <i className="dropdown-toggler__icon fas fa-chevron-down" />
             </a>
           </div>
 
@@ -24,6 +25,7 @@ class Mobile extends Component {
           <div className="col-12">
             <div className="collapse" id="select-or-tabs__dropdown-content">
               {/* here goes my list */}
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus deleniti quidem obcaecati exercitationem sequi eius molestiae, corporis at possimus maiores voluptate. Maxime suscipit saepe, ipsum fugit officia rem praesentium! Labore!
             </div>
           </div>
         </div>
