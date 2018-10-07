@@ -1,11 +1,4 @@
 @import "../../../../scss/colors";
 @import "./Products//Product/Product";
 @import "./Select/Select";
-
-.select-or-tabs {
-  .mobile {
-    .products {
-      background-color: $tangerine;
-    }
-  }
-}
+@import "./Products/Products";
