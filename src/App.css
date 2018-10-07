@@ -139,3 +139,9 @@
 
 .offers-collage .offer-col {
   border: 2px solid white; }
+
+.select-or-tabs .mobile .select {
+  background-color: #f4845d; }
+
+.select-or-tabs .mobile .products {
+  background-color: #fd926d; }

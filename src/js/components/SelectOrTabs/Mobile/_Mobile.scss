@@ -1,0 +1,13 @@
+@import "../../../../scss/colors";
+
+.select-or-tabs {
+  .mobile {
+    .select {
+      background-color: $tangerineDarker;
+    }
+
+    .products {
+      background-color: $tangerine;
+    }
+  }
+}
