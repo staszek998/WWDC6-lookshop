@@ -27,7 +27,7 @@ class Mobile extends Component {
             <select
               name="select-or-tabs--mobile"
               id="select-or-tabs--mobile"
-              className="form-control text-white border-0"
+              className="form-control text-white border-0 my-2"
               onChange={this.selectChangeHandler}
             >
               <option value={whatsHot}>{whatsHot}</option>
