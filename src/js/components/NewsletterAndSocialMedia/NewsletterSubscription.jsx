@@ -4,7 +4,7 @@ class NewsletterSubscription extends Component {
   render() {
     return (
       <div className="col-12 col-md-6 newsletter">
-        <div className="row form-group flex-nowrap my-3">
+        <form className="row form-group flex-nowrap my-3">
           {/* Label */}
           <label
             htmlFor="email"
@@ -18,9 +18,10 @@ class NewsletterSubscription extends Component {
             <input
               name="email"
               id="email"
-              type="text"
+              type="email"
               className="form-control rounded-0 font-italic h-100 border-0"
               placeholder="Your e-mail address"
+              autoComplete="email"
             />
 
             {/* Plus sign (button) */}
@@ -30,7 +31,7 @@ class NewsletterSubscription extends Component {
               </button>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     );
   }
