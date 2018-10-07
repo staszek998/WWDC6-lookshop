@@ -11,7 +11,7 @@ class OffersCollage extends Component {
   render() {
     return (
       <div className="container d-none d-md-block offers-collage my-5">
-        <div className="row w-100">
+        <div className="row">
           <div className="col p-0 offer-col">
             <Offer imgSrc={offerImage1} imgAlt="Sample image alt text" />
           </div>
