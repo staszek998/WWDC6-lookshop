@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 
 class Mobile extends Component {
+  state = {
+    activeTab: "whats-hot"
+  };
+
   render() {
     return (
       <div className="container mobile">
