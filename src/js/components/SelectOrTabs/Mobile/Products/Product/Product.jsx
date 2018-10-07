@@ -13,7 +13,7 @@ class Product extends Component {
         />
 
         <div className="wrapper d-flex flex-column justify-content-around align-items-center py-2 px-3">
-          <span className="title">{this.props.productObject.title}</span>
+          <span className="title">{this.props.productObject.brand}</span>
           <span className="price">{`$${Number(
             this.props.productObject.price
           ).toFixed(2)}`}</span>

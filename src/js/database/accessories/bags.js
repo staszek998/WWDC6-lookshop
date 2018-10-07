@@ -49,7 +49,7 @@ const bags = [
   },
 
   {
-    brand: "MICHAEL Michael Kors",
+    brand: "Michael Kors",
     title: "JET SET TRAVEL CROSSBODY - Torba na ramię",
     price: 759.0,
     photosPath: "jet-set-travel",
