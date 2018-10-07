@@ -142,6 +142,11 @@
 
 .select-or-tabs .mobile .select {
   background-color: #f4845d; }
+  .select-or-tabs .mobile .select select option {
+    background-color: #fd926d; }
+    .select-or-tabs .mobile .select select option:hover {
+      background-color: white;
+      color: black; }
 
 .select-or-tabs .mobile .products {
   background-color: #fd926d; }

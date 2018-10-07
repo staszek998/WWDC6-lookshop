@@ -4,6 +4,17 @@
   .mobile {
     .select {
       background-color: $tangerineDarker;
+
+      select {
+        option {
+          background-color: $tangerine;
+
+          &:hover {
+            background-color: white;
+            color: black;
+          }
+        }
+      }
     }
 
     .products {

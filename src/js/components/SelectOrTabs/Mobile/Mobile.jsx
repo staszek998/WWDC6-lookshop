@@ -1,5 +1,11 @@
 import React, { Component } from "react";
 
+// Tabs declarations:
+const whatsHot = `WHAT'S HOT?`,
+  designers = `DESIGNERS`,
+  featured = `FEATURED`,
+  latest = `LATEST`;
+
 class Mobile extends Component {
   state = {
     activeTab: "whats-hot"
@@ -8,45 +14,19 @@ class Mobile extends Component {
   render() {
     return (
       <div className="container mobile">
-        {/* Dropdown */}
+        {/* Select */}
         <div className="row select">
-          {/* Toggler button */}
-          <div className="col-12">
-            <a
-              className="btn btn-block text-white text-left d-flex justify-content-between align-items-center"
-              data-toggle="collapse"
-              href="#select-or-tabs__dropdown-content"
-              role="button"
-              aria-expanded="false"
-              aria-controls="select-or-tabs__dropdown-content"
+          <div className="col">
+            <select
+              name="select-or-tabs--mobile"
+              id="select-or-tabs--mobile"
+              className="form-control bg-transparent text-white border-0"
             >
-              <span className="dropdown-toggler__text">WHAT'S HOT?</span>
-              <i className="dropdown-toggler__icon fas fa-chevron-down" />
-            </a>
-          </div>
-
-          {/* Collapsed content */}
-          <div className="col-12">
-            <div className="collapse" id="select-or-tabs__dropdown-content">
-              <a
-                href="#"
-                className="btn btn-link btn-block text-white text-left"
-              >
-                DESIGNERS
-              </a>
-              <a
-                href="#"
-                className="btn btn-link btn-block text-white text-left"
-              >
-                FEATURED
-              </a>
-              <a
-                href="#"
-                className="btn btn-link btn-block text-white text-left"
-              >
-                LATEST
-              </a>
-            </div>
+              <option value={whatsHot}>{whatsHot}</option>
+              <option value={designers}>{designers}</option>
+              <option value={featured}>{featured}</option>
+              <option value={latest}>{latest}</option>
+            </select>
           </div>
         </div>
 
