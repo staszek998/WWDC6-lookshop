@@ -9,7 +9,6 @@ class Offer extends Component {
           alt={this.props.imgAlt}
           className="background"
         />
-        {this.props.content}
       </div>
     );
   }
