@@ -8,5 +8,9 @@
 
   .wrapper {
     background-color: $veryLightGray;
+
+    .title {
+      white-space: nowrap;
+    }
   }
 }

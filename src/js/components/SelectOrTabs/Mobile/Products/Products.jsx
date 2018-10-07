@@ -1,29 +1,29 @@
 import React, { Component } from "react";
 
 import Product from "./Product/Product";
+import { dresses } from "../../../../database/clothes/dresses";
 
-import img1 from "../../../../../images/database/clothes/dresses/king-louie/1.jpg";
-import img2 from "../../../../../images/database/clothes/dresses/lee/1.jpg";
+// import img1 from "../../../../../images/database/clothes/dresses/king-louie/1.jpg";
+// import img2 from "../../../../../images/database/clothes/dresses/lee/1.jpg";
 
 class Products extends Component {
   render() {
     return (
       <div className="row products">
         {/* Products shown by default */}
-        <Product imgSrc={img1} />
-        <Product imgSrc={img2} />
+        <Product productObject={dresses[0]} />
+        <Product productObject={dresses[1]} />
 
         {/* Products initially collapsed */}
         <div className="col-12 collapse" id="hiddenProducts">
           <div className="row">
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
+            {dresses.map((dress, index) => {
+              if (index < 2) {
+                return null;
+              } else {
+                return <Product productObject={dress} />;
+              }
+            })}
           </div>
         </div>
 
