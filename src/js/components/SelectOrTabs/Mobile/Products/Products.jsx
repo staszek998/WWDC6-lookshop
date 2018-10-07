@@ -3,9 +3,6 @@ import React, { Component } from "react";
 import Product from "./Product/Product";
 import { dresses } from "../../../../database/clothes/dresses";
 
-// import img1 from "../../../../../images/database/clothes/dresses/king-louie/1.jpg";
-// import img2 from "../../../../../images/database/clothes/dresses/lee/1.jpg";
-
 class Products extends Component {
   state = {
     collapsed: true
