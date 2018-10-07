@@ -1,0 +1,16 @@
+@import "../../../../../../scss/colors";
+
+.product {
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .wrapper {
+    background-color: $veryLightGray;
+
+    .title {
+      white-space: nowrap;
+    }
+  }
+}
