@@ -1,7 +1,9 @@
 .offer {
-  .offer-image {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+  .offer-link {
+    .offer-image {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
