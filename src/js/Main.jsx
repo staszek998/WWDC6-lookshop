@@ -25,8 +25,8 @@ class Main extends Component {
           <HeroSlider />
           <NewsletterAndSocialMedia />
           <OffersCollage />
-          {/* <SelectOrTabs />
-          <Clearance50Off />
+          <SelectOrTabs />
+          {/* <Clearance50Off />
           <FavouriteBrands />
           <AboutLookshop />
           <AcceptedPayments />
