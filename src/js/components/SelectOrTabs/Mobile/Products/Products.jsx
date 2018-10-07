@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 import Product from "./Product/Product";
-import { database } from "../../../../database/database";
 
 const whatsHot = `WHAT'S HOT?`,
   designers = `DESIGNERS`,
