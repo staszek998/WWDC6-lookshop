@@ -23,7 +23,12 @@ class Products extends Component {
               if (index < 2) {
                 return null;
               } else {
-                return <Product productObject={product} />;
+                return (
+                  <Product
+                    productObject={product}
+                    key={`${product.brand}_${product.title}`}
+                  />
+                );
               }
             })}
           </div>
