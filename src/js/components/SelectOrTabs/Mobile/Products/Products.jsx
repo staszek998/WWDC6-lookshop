@@ -4,10 +4,16 @@ class Products extends Component {
   render() {
     return (
       <div className="row products">
-        <div className="col">
-          I'm currently rendering the <b>{this.props.categoryToShow}</b>{" "}
-          category.
-        </div>
+        <div className="col-6">content</div>
+        <div className="col-6">content</div>
+        <div className="col-6">content</div>
+        <div className="col-6">content</div>
+        <div className="col-6">content</div>
+        <div className="col-6">content</div>
+        <div className="col-6">content</div>
+        <div className="col-6">content</div>
+        <div className="col-6">content</div>
+        <div className="col-6">content</div>
       </div>
     );
   }
