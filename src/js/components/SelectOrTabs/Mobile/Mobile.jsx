@@ -8,7 +8,7 @@ const whatsHot = `WHAT'S HOT?`,
 
 class Mobile extends Component {
   state = {
-    activeTab: "whats-hot"
+    activeCategory: whatsHot
   };
 
   render() {
