@@ -24,8 +24,8 @@ class Main extends Component {
           <LogoMenuAndCart />
           <HeroSlider />
           <NewsletterAndSocialMedia />
-          {/* <OffersCollage />
-          <SelectOrTabs />
+          <OffersCollage />
+          {/* <SelectOrTabs />
           <Clearance50Off />
           <FavouriteBrands />
           <AboutLookshop />
@@ -33,6 +33,8 @@ class Main extends Component {
           <FooterTop />
           <FooterBottom />
           <FooterMenuMobile /> */}
+
+          <div className="spacer" style={{ height: "500px" }} />
         </main>
       </Router>
     );
