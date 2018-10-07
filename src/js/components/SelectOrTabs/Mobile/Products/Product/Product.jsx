@@ -7,8 +7,8 @@ class Product extends Component {
         <img src={this.props.imgSrc} alt={this.props.imgAlt} />
         <div className="row">
           <div className="col-12 text-center text-dark">
-            <span>CLOTHING TITLE</span>
-            <span>$99.99</span>
+            <span className="title">CLOTHING TITLE</span>
+            <span className="price">$99.99</span>
             <button className="btn rounded-0">
               ADD TO CART <i className="fas fa-plus" />
             </button>
