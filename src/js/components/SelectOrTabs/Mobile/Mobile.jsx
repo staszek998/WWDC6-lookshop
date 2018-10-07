@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Products from "./Products/Products";
 import Select from "./Select/Select";
-import CollapseToggler from "./Products/CollapseToggler/CollapseToggler";
+import CollapseToggler from "./CollapseToggler/CollapseToggler";
 
 const whatsHot = `WHAT'S HOT?`;
 
