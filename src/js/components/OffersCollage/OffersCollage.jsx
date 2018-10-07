@@ -1,51 +1,11 @@
 import React, { Component } from "react";
 
-import Offer from "./Offer";
+import Offer from "./Offer/Offer";
 
-import offerBg1 from "../../../images/offers-collage/offer-1.png";
-import offerBg2 from "../../../images/offers-collage/offer-2.png";
-import offerBg3 from "../../../images/offers-collage/offer-3.png";
-import offerBg4 from "../../../images/offers-collage/offer-4.png";
-
-const offer1Content = (
-  <div className="container">
-    <div className="row">
-      <div className="col-6">
-        <h3 className="display-1">Offer title</h3>
-      </div>
-    </div>
-  </div>
-);
-
-const offer2Content = (
-  <div className="container">
-    <div className="row">
-      <div className="col-6">
-        <h3 className="display-2">Offer title</h3>
-      </div>
-    </div>
-  </div>
-);
-
-const offer3Content = (
-  <div className="container">
-    <div className="row">
-      <div className="col-6">
-        <h3 className="display-3">Offer title</h3>
-      </div>
-    </div>
-  </div>
-);
-
-const offer4Content = (
-  <div className="container">
-    <div className="row">
-      <div className="col-6">
-        <h3 className="display-3">Offer title</h3>
-      </div>
-    </div>
-  </div>
-);
+import offerImage1 from "../../../images/offers-collage/offer-1.png";
+import offerImage2 from "../../../images/offers-collage/offer-2.png";
+import offerImage3 from "../../../images/offers-collage/offer-3.png";
+import offerImage4 from "../../../images/offers-collage/offer-4.png";
 
 class OffersCollage extends Component {
   render() {
@@ -53,36 +13,20 @@ class OffersCollage extends Component {
       <div className="container d-none d-md-block offers-collage my-5">
         <div className="row w-100">
           <div className="col p-0 offer-col">
-            <Offer
-              imgSrc={offerBg1}
-              imgAlt="Sample image alt text"
-              content={offer1Content}
-            />
+            <Offer imgSrc={offerImage1} imgAlt="Sample image alt text" />
           </div>
           <div className="col">
             <div className="row h-50">
               <div className="col p-0 offer-col">
-                <Offer
-                  imgSrc={offerBg2}
-                  imgAlt="Sample image alt text"
-                  content={offer2Content}
-                />
+                <Offer imgSrc={offerImage2} imgAlt="Sample image alt text" />
               </div>
             </div>
             <div className="row h-50">
               <div className="col p-0 offer-col">
-                <Offer
-                  imgSrc={offerBg3}
-                  imgAlt="Sample image alt text"
-                  content={offer3Content}
-                />
+                <Offer imgSrc={offerImage3} imgAlt="Sample image alt text" />
               </div>
               <div className="col p-0 offer-col">
-                <Offer
-                  imgSrc={offerBg4}
-                  imgAlt="Sample image alt text"
-                  content={offer4Content}
-                />
+                <Offer imgSrc={offerImage4} imgAlt="Sample image alt text" />
               </div>
             </div>
           </div>

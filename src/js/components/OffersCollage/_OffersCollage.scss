@@ -1,20 +1,8 @@
 @import "../../../scss/colors";
+@import "./Offer/Offers";
 
 .offers-collage {
-  height: 250px;
-
   .offer-col {
     border: 2px solid white;
-  }
-
-  .offer {
-    position: relative;
-
-    .background {
-      position: absolute;
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-    }
   }
 }

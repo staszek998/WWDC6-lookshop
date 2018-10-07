@@ -7,7 +7,7 @@ class Offer extends Component {
         <img
           src={this.props.imgSrc}
           alt={this.props.imgAlt}
-          className="background"
+          className="offer-image"
         />
       </div>
     );
