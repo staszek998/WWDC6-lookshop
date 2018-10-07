@@ -38,12 +38,7 @@ class Mobile extends Component {
           </form>
         </div>
 
-        {/* Products */}
-        <div className="row products">
-          <div className="col">
-            <Products categoryToShow={this.state.activeCategory} />
-          </div>
-        </div>
+        <Products categoryToShow={this.state.activeCategory} />
       </div>
     );
   }
