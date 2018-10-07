@@ -147,7 +147,8 @@
 .product .wrapper {
   background-color: #f7f7f7; }
   .product .wrapper .title {
-    white-space: nowrap; }
+    white-space: nowrap;
+    text-transform: uppercase; }
 
 .select-or-tabs .mobile .select {
   background-color: #f4845d; }
