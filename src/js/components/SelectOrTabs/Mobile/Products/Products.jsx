@@ -7,27 +7,44 @@ const whatsHot = `WHAT'S HOT?`,
   featured = `FEATURED`,
   latest = `LATEST`;
 
+const exampleImages = [
+  "https://mosaic03.ztat.net/vgs/media/catalog-sm/ET/98/1R/02/HG/11/ET981R02H-G11@3.jpg",
+  "https://mosaic03.ztat.net/vgs/media/catalog-sm/GU/18/1A/04/QQ/11/GU181A04Q-Q11@5.jpg",
+  "https://mosaic03.ztat.net/vgs/media/catalog-sm/ES/18/1A/0K/TK/11/ES181A0KT-K11@3.jpg",
+  "https://mosaic03.ztat.net/vgs/media/catalog-sm/2L/P8/1P/00/AQ/11/2LP81P00A-Q11@5.jpg",
+  "https://mosaic03.ztat.net/vgs/media/catalog-sm/2L/P8/1Q/00/3Q/11/2LP81Q003-Q11@3.jpg",
+  "https://mosaic03.ztat.net/vgs/media/catalog-sm/ES/18/1R/02/MQ/11/ES181R02M-Q11@3.jpg",
+  "https://www.theclosetlover.com/sites/files/theclosetlover/productimg/201803/dsc04410.jpg",
+  "https://cdn.shopify.com/s/files/1/0293/9277/products/Fashion_Nova_02-21-17-147_1000x.jpg?v=1487705918",
+  "https://www.lulus.com/images/product/w_560/2956960_420782.jpg",
+  "https://www.chichiclothing.com/product_images/k/954/29.090.17_ChiChi_14_0024__94169_zoom.jpg"
+];
+
+const shuffle = arrayToShuffle => {
+  return arrayToShuffle.sort(() => 0.5 - Math.random());
+};
+
+const whatsHotImages = shuffle(exampleImages),
+  designersImages = shuffle(exampleImages),
+  featuredImages = shuffle(exampleImages),
+  latestImages = shuffle(exampleImages);
+
 class Products extends Component {
   renderProducts = productsToRender => {
     return (
       <div className="row products">
         {/* Products shown by default */}
-        <Product productObject={productsToRender[0]} />
-        <Product productObject={productsToRender[1]} />
+        <Product imgSrc={productsToRender[0]} />
+        <Product imgSrc={productsToRender[1]} />
 
         {/* Products initially collapsed */}
         <div className="col-12 collapse" id="hiddenProducts">
           <div className="row">
-            {productsToRender.map((product, index) => {
+            {productsToRender.map((url, index) => {
               if (index < 2) {
                 return null;
               } else {
-                return (
-                  <Product
-                    productObject={product}
-                    key={`${product.brand}_${product.title}`}
-                  />
-                );
+                return <Product imgSrc={url} key={url} />;
               }
             })}
           </div>
@@ -39,23 +56,23 @@ class Products extends Component {
   render() {
     switch (this.props.categoryToShow) {
       case whatsHot:
-        return this.renderProducts(database.clothes.dresses);
+        return this.renderProducts(whatsHotImages);
         break;
 
       case designers:
-        return this.renderProducts(database.shoes.highHeels);
+        return this.renderProducts(designersImages);
         break;
 
       case featured:
-        return this.renderProducts(database.underwear.bras);
+        return this.renderProducts(featuredImages);
         break;
 
       case latest:
-        return this.renderProducts(database.accessories.bags);
+        return this.renderProducts(latestImages);
         break;
 
       default:
-        return this.renderProducts(database.clothes.dresses);
+        return this.renderProducts(exampleImages);
         break;
     }
   }
