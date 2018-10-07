@@ -6,7 +6,10 @@ class NewsletterSubscription extends Component {
       <div className="col-12 col-md-6 newsletter">
         <div className="row form-group flex-nowrap my-3">
           {/* Label */}
-          <label for="email" class="col-4 col-form-label d-none d-md-block">
+          <label
+            htmlFor="email"
+            className="col-4 col-form-label d-none d-md-block"
+          >
             Stay updated
           </label>
 
