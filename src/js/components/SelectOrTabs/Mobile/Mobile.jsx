@@ -17,6 +17,7 @@ class Mobile extends Component {
         {/* Select */}
         <div className="row select">
           <div className="col">
+            <form action="submit" />
             <select
               name="select-or-tabs--mobile"
               id="select-or-tabs--mobile"
