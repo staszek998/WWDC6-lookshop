@@ -6,14 +6,8 @@
       background-color: $tangerineDarker;
 
       select {
-        option {
-          background-color: $tangerine;
-
-          &:hover {
-            background-color: white;
-            color: black;
-          }
-        }
+        background-color: $tangerineDarker;
+        appearance: none;
       }
     }
 
