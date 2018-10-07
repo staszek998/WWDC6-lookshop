@@ -1,6 +1,16 @@
 import React, { Component } from "react";
 
 class CollapseToggler extends Component {
+  state = {
+    collapsed: true
+  };
+
+  buttonClickHandler = () => {
+    this.setState({
+      collapsed: !this.state.collapsed
+    });
+  };
+
   render() {
     return (
       <div className="col-12 text-center py-3">
