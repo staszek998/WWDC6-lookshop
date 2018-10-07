@@ -4,7 +4,7 @@ class Offer extends Component {
   render() {
     return (
       <div className="offer w-100 h-100">
-        <a href="#" className="offer-link">
+        <a href={this.props.aHref} target="_blank" className="offer-link">
           <img
             src={this.props.imgSrc}
             alt={this.props.imgAlt}
