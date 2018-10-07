@@ -21,6 +21,7 @@ class NewsletterSubscription extends Component {
               type="email"
               className="form-control rounded-0 font-italic h-100 border-0"
               placeholder="Your e-mail address"
+              autoComplete="email"
             />
 
             {/* Plus sign (button) */}
