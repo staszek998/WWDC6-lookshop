@@ -2,15 +2,13 @@ import React, { Component } from "react";
 
 import Product from "./Product/Product";
 import { database } from "../../../../database/database";
-import CollapseToggler from "./CollapseToggler/CollapseToggler";
 
-const whatsHot = `WHAT'S HOT?`;
+const whatsHot = `WHAT'S HOT?`,
+  designers = `DESIGNERS`,
+  featured = `FEATURED`,
+  latest = `LATEST`;
 
 class Products extends Component {
-  state = {
-    collapsed: true
-  };
-
   renderProducts = productsToRender => {
     return (
       <div className="row products">
@@ -34,35 +32,28 @@ class Products extends Component {
     );
   };
 
-  buttonClickHandler = () => {
-    this.setState({
-      collapsed: !this.state.collapsed
-    });
-  };
-
   render() {
-    return (
-      <div className="row products">
-        {/* Products shown by default */}
-        <Product productObject={dresses[0]} />
-        <Product productObject={dresses[1]} />
+    switch (this.props.categoryToShow) {
+      case whatsHot:
+        return this.renderProducts(database.clothes.dresses);
+        break;
 
-        {/* Products initially collapsed */}
-        <div className="col-12 collapse" id="hiddenProducts">
-          <div className="row">
-            {dresses.map((dress, index) => {
-              if (index < 2) {
-                return null;
-              } else {
-                return <Product productObject={dress} />;
-              }
-            })}
-          </div>
-        </div>
+      case designers:
+        return this.renderProducts(database.shoes.highHeels);
+        break;
 
-        <CollapseToggler />
-      </div>
-    );
+      case featured:
+        return this.renderProducts(database.underwear.bras);
+        break;
+
+      case latest:
+        return this.renderProducts(database.accessories.bags);
+        break;
+
+      default:
+        return this.renderProducts(database.clothes.dresses);
+        break;
+    }
   }
 }
 

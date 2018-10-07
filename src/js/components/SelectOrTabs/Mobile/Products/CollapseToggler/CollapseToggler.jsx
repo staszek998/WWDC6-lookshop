@@ -1,16 +1,6 @@
 import React, { Component } from "react";
 
 class CollapseToggler extends Component {
-  state = {
-    collapsed: true
-  };
-
-  buttonClickHandler = () => {
-    this.setState({
-      collapsed: !this.state.collapsed
-    });
-  };
-
   render() {
     return (
       <div className="col-12 text-center py-3">
@@ -21,9 +11,9 @@ class CollapseToggler extends Component {
           data-target="#hiddenProducts"
           aria-expanded="false"
           aria-controls="hiddenProducts"
-          onClick={this.buttonClickHandler}
+          onClick={this.props.buttonClickHandler}
         >
-          {this.state.collapsed ? "LOAD MORE" : "SHOW LESS"}
+          {this.props.collapsed ? "LOAD MORE" : "SHOW LESS"}
         </button>
       </div>
     );
