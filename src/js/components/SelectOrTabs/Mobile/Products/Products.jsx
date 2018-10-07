@@ -21,26 +21,42 @@ const exampleImages = [
 ];
 
 const shuffle = arrayToShuffle => {
-  return arrayToShuffle.sort(() => 0.5 - Math.random());
+  var copiedArray = arrayToShuffle.map(el => el);
+  var ctr = copiedArray.length,
+    temp,
+    index;
+
+  // While there are elements in the array
+  while (ctr > 0) {
+    // Pick a random index
+    index = Math.floor(Math.random() * ctr);
+    // Decrease ctr by 1
+    ctr--;
+    // And swap the last element with it
+    temp = copiedArray[ctr];
+    copiedArray[ctr] = copiedArray[index];
+    copiedArray[index] = temp;
+  }
+  return copiedArray;
 };
 
-const whatsHotImages = shuffle(exampleImages),
-  designersImages = shuffle(exampleImages),
-  featuredImages = shuffle(exampleImages),
-  latestImages = shuffle(exampleImages);
+const whatsHotImages = shuffle(exampleImages);
+const designersImages = shuffle(exampleImages);
+const featuredImages = shuffle(exampleImages);
+const latestImages = shuffle(exampleImages);
 
 class Products extends Component {
-  renderProducts = productsToRender => {
+  renderProducts = images => {
     return (
       <div className="row products">
         {/* Products shown by default */}
-        <Product imgSrc={productsToRender[0]} />
-        <Product imgSrc={productsToRender[1]} />
+        <Product imgSrc={images[0]} />
+        <Product imgSrc={images[1]} />
 
         {/* Products initially collapsed */}
         <div className="col-12 collapse" id="hiddenProducts">
           <div className="row">
-            {productsToRender.map((url, index) => {
+            {images.map((url, index) => {
               if (index < 2) {
                 return null;
               } else {
@@ -56,22 +72,27 @@ class Products extends Component {
   render() {
     switch (this.props.categoryToShow) {
       case whatsHot:
+        console.log("Printing the whats hot images");
         return this.renderProducts(whatsHotImages);
         break;
 
       case designers:
+        console.log("Printing the designers images");
         return this.renderProducts(designersImages);
         break;
 
       case featured:
+        console.log("Printing the featured images");
         return this.renderProducts(featuredImages);
         break;
 
       case latest:
+        console.log("Printing the latest images");
         return this.renderProducts(latestImages);
         break;
 
       default:
+        console.log("Printing the default images");
         return this.renderProducts(exampleImages);
         break;
     }
