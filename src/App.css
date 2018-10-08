@@ -140,6 +140,16 @@
 .offers-collage .offer-col {
   border: 2px solid white; }
 
+.product img {
+  object-fit: cover;
+  width: 100%; }
+
+.product .wrapper {
+  background-color: #f7f7f7; }
+  .product .wrapper .title {
+    white-space: nowrap;
+    text-transform: uppercase; }
+
 .select-or-tabs .mobile .select {
   background-color: #f4845d; }
   .select-or-tabs .mobile .select select {
@@ -151,4 +161,7 @@
     background-repeat: no-repeat; }
 
 .select-or-tabs .mobile .products {
+  background-color: #fd926d; }
+
+.select-or-tabs .mobile .collapse-toggler-wrapper {
   background-color: #fd926d; }
