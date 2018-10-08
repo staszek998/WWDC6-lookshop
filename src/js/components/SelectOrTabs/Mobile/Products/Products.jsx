@@ -2,27 +2,38 @@ import React, { Component } from "react";
 
 import Product from "./Product/Product";
 
+import img1 from "../../../../../images/database/clothes/dresses/king-louie/1.png";
+import img2 from "../../../../../images/database/clothes/dresses/lee/1.jpg";
+import img3 from "../../../../../images/database/underwear/bras/ck-decolette/1.jpg";
+import img4 from "../../../../../images/database/underwear/bras/maidenform/1.jpg";
+import img5 from "../../../../../images/database/underwear/tights-and-stockings/falke-stockings/1.jpg";
+import img6 from "../../../../../images/database/underwear/tights-and-stockings/strapped-suspender/1.jpg";
+import img7 from "../../../../../images/database/shoes/high-heels/hogl/1.jpg";
+import img8 from "../../../../../images/database/shoes/high-heels/mai-piu-senza/1.jpg";
+import img9 from "../../../../../images/database/shoes/sneakers/superstar-foundation/1.jpg";
+import img10 from "../../../../../images/database/shoes/sneakers/hybrid-iconic/1.jpg";
+
 const whatsHot = `WHAT'S HOT?`,
   designers = `DESIGNERS`,
   featured = `FEATURED`,
   latest = `LATEST`;
 
 const exampleImages = [
-  "https://mosaic03.ztat.net/vgs/media/catalog-sm/ET/98/1R/02/HG/11/ET981R02H-G11@3.jpg",
-  "https://mosaic03.ztat.net/vgs/media/catalog-sm/GU/18/1A/04/QQ/11/GU181A04Q-Q11@5.jpg",
-  "https://mosaic03.ztat.net/vgs/media/catalog-sm/ES/18/1A/0K/TK/11/ES181A0KT-K11@3.jpg",
-  "https://mosaic03.ztat.net/vgs/media/catalog-sm/2L/P8/1P/00/AQ/11/2LP81P00A-Q11@5.jpg",
-  "https://mosaic03.ztat.net/vgs/media/catalog-sm/2L/P8/1Q/00/3Q/11/2LP81Q003-Q11@3.jpg",
-  "https://mosaic03.ztat.net/vgs/media/catalog-sm/ES/18/1R/02/MQ/11/ES181R02M-Q11@3.jpg",
-  "https://www.theclosetlover.com/sites/files/theclosetlover/productimg/201803/dsc04410.jpg",
-  "https://cdn.shopify.com/s/files/1/0293/9277/products/Fashion_Nova_02-21-17-147_1000x.jpg?v=1487705918",
-  "https://www.lulus.com/images/product/w_560/2956960_420782.jpg",
-  "https://www.chichiclothing.com/product_images/k/954/29.090.17_ChiChi_14_0024__94169_zoom.jpg"
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+  img10
 ];
 
 const shuffle = arrayToShuffle => {
-  var copiedArray = arrayToShuffle.map(el => el);
-  var ctr = copiedArray.length,
+  let copiedArray = arrayToShuffle.map(el => el);
+  let ctr = copiedArray.length,
     temp,
     index;
 
