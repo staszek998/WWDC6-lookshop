@@ -7,13 +7,13 @@ import HeroSlider from "./components/HeroSlider/HeroSlider";
 import NewsletterAndSocialMedia from "./components/NewsletterAndSocialMedia/NewsletterAndSocialMedia";
 import OffersCollage from "./components/OffersCollage/OffersCollage";
 import SelectOrTabs from "./components/SelectOrTabs/SelectOrTabs";
-import Clearance50Off from "./components/Clearance50Off/Clearance50Off";
-import FavouriteBrands from "./components/FavouriteBrands/FavouriteBrands";
-import AboutLookshop from "./components/AboutLookshop/AboutLookshop";
-import AcceptedPayments from "./components/AcceptedPayments/AcceptedPayments";
-import FooterTop from "./components/FooterTop/FooterTop";
-import FooterBottom from "./components/FooterBottom/FooterBottom";
-import FooterMenuMobile from "./components/FooterMenuMobile/FooterMenuMobile";
+// import Clearance50Off from "./components/Clearance50Off/Clearance50Off";
+// import FavouriteBrands from "./components/FavouriteBrands/FavouriteBrands";
+// import AboutLookshop from "./components/AboutLookshop/AboutLookshop";
+// import AcceptedPayments from "./components/AcceptedPayments/AcceptedPayments";
+// import FooterTop from "./components/FooterTop/FooterTop";
+// import FooterBottom from "./components/FooterBottom/FooterBottom";
+// import FooterMenuMobile from "./components/FooterMenuMobile/FooterMenuMobile";
 
 class Main extends Component {
   render() {
@@ -25,15 +25,14 @@ class Main extends Component {
           <HeroSlider />
           <NewsletterAndSocialMedia />
           <OffersCollage />
-          {/* <SelectOrTabs />
-          <Clearance50Off />
+          <SelectOrTabs />
+          {/* <Clearance50Off />
           <FavouriteBrands />
           <AboutLookshop />
           <AcceptedPayments />
           <FooterTop />
           <FooterBottom />
           <FooterMenuMobile /> */}
-
           <div className="spacer" style={{ height: "500px" }} />
         </main>
       </Router>
