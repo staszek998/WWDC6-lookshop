@@ -1,44 +1,37 @@
 import React, { Component } from "react";
 import Products from "./Products/Products";
+import Select from "./Select/Select";
+import CollapseToggler from "./CollapseToggler/CollapseToggler";
 
-// Tabs declarations:
-const whatsHot = `WHAT'S HOT?`,
-  designers = `DESIGNERS`,
-  featured = `FEATURED`,
-  latest = `LATEST`;
+const whatsHot = `WHAT'S HOT?`;
 
 class Mobile extends Component {
   state = {
-    activeCategory: whatsHot
+    activeCategory: whatsHot,
+    collapsed: true
   };
 
-  selectChangeHandler = event => {
+  buttonClickHandler = () => {
     this.setState({
-      activeCategory: event.target.value
+      collapsed: !this.state.collapsed
+    });
+  };
+
+  selectChangeHandler = newCategory => {
+    this.setState({
+      activeCategory: newCategory
     });
   };
 
   render() {
     return (
       <div className="container mobile">
-        {/* Select */}
-        <div className="row select">
-          <form action="submit" className="col">
-            <select
-              name="select-or-tabs--mobile"
-              id="select-or-tabs--mobile"
-              className="form-control text-white border-0"
-              onChange={this.selectChangeHandler}
-            >
-              <option value={whatsHot}>{whatsHot}</option>
-              <option value={designers}>{designers}</option>
-              <option value={featured}>{featured}</option>
-              <option value={latest}>{latest}</option>
-            </select>
-          </form>
-        </div>
-
+        <Select changeHandler={this.selectChangeHandler} />
         <Products categoryToShow={this.state.activeCategory} />
+        <CollapseToggler
+          buttonClickHandler={this.buttonClickHandler}
+          collapsed={this.state.collapsed}
+        />
       </div>
     );
   }

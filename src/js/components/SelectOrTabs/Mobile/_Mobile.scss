@@ -1,23 +1,5 @@
 @import "../../../../scss/colors";
 @import "./Products//Product/Product";
-
-.select-or-tabs {
-  .mobile {
-    .select {
-      background-color: $tangerineDarker;
-
-      select {
-        appearance: none;
-        background-color: $tangerineDarker;
-        background-image: url(./icons/arrow-down.svg);
-        background-size: 20px;
-        background-position: right center;
-        background-repeat: no-repeat;
-      }
-    }
-
-    .products {
-      background-color: $tangerine;
-    }
-  }
-}
+@import "./Select/Select";
+@import "./Products/Products";
+@import "./CollapseToggler/CollapseToggler";
